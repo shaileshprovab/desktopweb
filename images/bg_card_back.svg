@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="8px" viewBox="0 0 4 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#B0B4B7" fill-rule="nonzero">
+            <polygon id="Triangle-2" points="0 2 2 0 2 4"></polygon>
+            <polygon id="Triangle-2" transform="translate(3.000000, 2.000000) scale(-1, 1) translate(-3.000000, -2.000000) " points="2 2 4 0 4 4"></polygon>
+            <polygon id="Triangle-2" points="2 6 4 4 4 8"></polygon>
+            <polygon id="Triangle-2" transform="translate(1.000000, 6.000000) scale(-1, 1) translate(-1.000000, -6.000000) " points="0 6 2 4 2 8"></polygon>
+        </g>
+    </g>
+</svg>

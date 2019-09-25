@@ -1,0 +1,44 @@
+
+#slider {
+width:600px;
+top:3px;
+position:absolute;
+z-index:999;
+}
+#header {
+width:428px;
+height:800px;
+position:absolute;
+right:0;
+/* border:1px solid #d8d8d8; */
+margin-left:40px;
+/* padding:20px 40px; */
+border-radius:3px;
+box-shadow:0 0 8px gray;
+background:#fff;
+}
+#sidebar {
+position:absolute;
+top:180px;
+left:120px;
+box-shadow:0 0 8px gray;
+background: #262626;
+transform: rotate(90deg);
+padding: 12px 10px;
+color: #fff;
+cursor: pointer;
+}
+#sidebar1 {
+position:absolute;
+top:180px;
+left:120px;
+box-shadow:0 0 8px gray;
+background: #262626;
+transform: rotate(90deg);
+padding: 12px 10px;
+color: #fff;
+cursor: pointer;
+}
+div#slider.left ,div#slider.right {
+    transition: all 0.5s ease;
+}

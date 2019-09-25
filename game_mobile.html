@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="theme-color" content="#030303"/>
+<meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+<title>Gaming site</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+<link rel="stylesheet" type="text/css" href="css/responsive_mob.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"/>
+</head>
+<body id="touch-move">
+
+
+
+
+<!-- mobile view start -->
+<div class="loader" style="display: block;">
+    <div class="abgne-loading" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);height: 30vmin;width: 30vmin;">
+    <div class="loading_text" style="font-size: 5vmin">Loading...</div>
+    <div class="loading"></div>
+    </div>
+</div>
+<div class="container" style="display: none;">
+	<div class="top-height">
+		<div class="top-header">
+			<div class="top-header-left">
+                <a href="lobby_mobile.html">Goback Lobby</a>
+				<a href="#"><i class="fa fa-user" aria-hidden="true"></i> page0001866</a>
+				<a href="#"><i class="fa fa-usd" aria-hidden="true"></i> 19,960.00</a>
+			</div>
+			<div class="top-header-right dropdown">
+				<a href="#" class="dropbtn" id="menu_btn"><i class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="dropdown-content" id="menu_content">
+                    <a href="#" class="menu_link">Link 1</a>
+                    <a href="#" class="menu_link">Link 2</a>
+                    <a href="#" class="menu_link">Link 3</a>
+                  </div>
+                </a>
+			</div>
+		</div>
+		<div class="top-header-row1">
+			<div class="top-header-row1-left">
+				<a href="#"><img src="images/we-player.png" alt="gaming site"></a>
+			</div>
+			<div class="top-header-row1-right">				
+				<div class="icon-text">					
+					<a href="#"><img src="images/uparrow.png" style="width:20px;"> 5-300 </a>
+				</div>
+				<div class="progress-bar">
+					<span class="progress-text-left">P0%</span>
+					<span class="progress-text-right">0%B</span>
+					<div class="w3-border">
+					<div class="w3-grey" style="height:3px;width:20%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="video-section-row">			
+			<div class="video-section-top-right">				
+				<!-- <div id="countdown"></div> -->
+                <div id="countdown-svg" class="progress" style="">
+                    <div class="progress-wrap">
+                      <p id="countdownTime"></p>
+                    </div>
+
+                    <div id="circle-progress">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+                        <circle id="custom" r="26" cx="28" cy="28" style="stroke-dashoffset: 0px;"></circle>
+                      </svg>
+                    </div>
+                </div>
+			</div>
+			<div class="video-section-bottom-left" id="openSettings">
+				<i class="fa fa-cog" aria-hidden="true"></i>
+			</div>
+			<!-- <div class="video-section-bottom-right">
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+            </div>
+            <div class="like-hand">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div> -->
+		</div>
+		<div class="bet-section-area">
+				<div class="bet-table">
+					<div class="bet-table-top">
+						<div class="bet-box-bottom2 p_Pair betContainer">
+							<p><span>0.0 /</span> 0</p>
+							<h3 class="ppair-color">P.PAIR</h3>
+							<p>1:8</p>
+							<div class="betPlacedP_Pair betSataus" data-status="notPlaced">
+								<img src="images/chips-11.svg" align="coin"  id="jsBetPlaced"/>
+                                <label class="add-datavalue">0</label>
+								<label class="mainvalue">0</label>
+							</div> 
+						</div>
+						<div class="bet-box-bottom2 tie betContainer">
+							<p><span>0.0 /</span> 0</p>
+							<h3>TIE</h3>
+							<p>1:8</p>
+							<div class="betPlacedTie betSataus"  data-status="notPlaced">
+								<img src="images/chips-11.svg" align="coin" />
+                                <label class="add-datavalue">0</label>
+								<label class="mainvalue">0</label>
+							</div>
+						</div>
+						<div class="bet-box-bottom2 b_Pair betContainer">
+							<p><span>0.0 /</span> 0</p>
+							<h3 class="bpair-color">B.PAIR</h3>
+							<p>1:8</p>
+							<div class="betPlacedB_Pair betSataus"  data-status="notPlaced">
+								<img src="images/chips-11.svg" align="coin" />
+                                <label class="add-datavalue">0</label>
+								<label class="mainvalue">0</label>
+							</div> 
+						</div>
+					</div>
+					<div class="bet-table-bottom">
+						<div class="bet-box-bottom1 betContainer">
+							<p><span>0.0 /</span> 0</p>
+							<h3>PLAYER</h3>
+							<p>1:1</p>
+							<div class="betPlaced betSataus" data-status="notPlaced">
+								<img src="images/chips-11.svg" align="coin" />
+                                <label class="add-datavalue">0</label>
+								<label class="mainvalue">0</label>
+							</div>
+						</div>
+						
+						<div class="bet-box-bottom3 banker betContainer">
+							<p><span>0.0 /</span> 0</p>
+							<h3 class="red-text">BANKER</h3>
+							<p>1:0.95</p>
+							<div class="betPlacedBanker betSataus" data-status="notPlaced">
+								<img src="images/chips-11.svg" align="coin" />
+                                <label class="add-datavalue">0</label>
+								<label class="mainvalue">0</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bet-table-wood">
+					&nbsp;
+				</div>
+				<div class="bet-coin-section">
+					<div class="coinsection-image">
+                            <div class="bet_chips">
+                                <ul class="chips3dSelect-in">
+                                    <li class="chips3d-1 take-coin-value" data-value='20'>
+                                        <p>20</p>
+                                        <span class="shadow">shadow</span>
+                                        <span class="ring">ring</span>
+                                    </li>
+                                    <li class="chips3d-2 take-coin-value" data-value='50'>
+                                        <p>50</p>
+                                        <span class="shadow">shadow</span>
+                                        
+                                        <span class="ring">ring</span>
+                                    </li>
+                                    <li class="chips3d-5 take-coin-value active now" data-value='100'>
+                                        <p>100</p>
+                                        <span class="shadow">shadow</span>
+                                        
+                                        <span class="ring">ring</span>
+                                    </li>
+                                    <li class="chips3d-10 take-coin-value" data-value='500'>
+                                        <p>500</p>
+                                        <span class="shadow">shadow</span>
+                                        
+                                        <span class="ring">ring</span>
+                                    </li>
+                                    <li class="chips3d-20 take-coin-value" data-value='1000'>
+                                        <p>1K</p>
+                                        <span class="shadow">shadow</span>
+                                        
+                                        <span class="ring">ring</span>
+                                    </li>
+                                  
+                                    <!--  <li class="chips3d-1 take-coin-value" data-value='10000'>
+                                       <p>10K</p>
+                                       <span class="shadow">shadow</span>
+                                       
+                                       <span class="ring">ring</span>
+                                    </li> -->
+                                      <li class="chips2d-icSet">
+                                       <img src="images/dollar.png" alt="dollar" id="chipSettingImage" />
+                                    </li>
+                                </ul>
+                            </div>
+				   </div>
+				   <div class="coinsection-text">
+				   		<div class="coin-text">
+							<a href="#">No.1 <small>19129</small></a>
+						</div>
+						<div class="coin-text1">
+							<div class="ok-notok-right-left">
+				   				<a href="#" id="myBtn"><i class="fa fa-check" aria-hidden="true"></i></a>
+				   			</div>
+				   			<div class="ok-notok-right-right">
+				   				<a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+				   			</div>
+						</div>
+						<div class="cointext-right">
+							<a href="#" id="total_bet_chip">0</a>
+						</div>
+				   </div>
+				</div>
+				<!-- result -->
+                                <div class="resultWindow">
+                                <div id="cardZone" class="open_card">
+                                    <div id="gameWinner" class="g-open_card win-tie">
+                                    <dl class="open_card-show" id="player-dl">
+                                        <dt>
+                                            <div id="playerWin" class="winner-logo"><img src="images/winner_bg.png"><label>WIN</label></div>
+                                            <div id="playerBg"><font id="playerHandValueTitle">PLAYER</font><span id="playerHandValue">0</span></div>
+                                        </dt>
+                                        <dd>
+                                            <div id="player1stCardAnime" class="poker-flip flippedBack">
+                                                <div class="open_card-poker_back"></div>
+                                                <div class="open_card-poker s num-3" id="player1stCard" style=""><span>3</span></div>
+                                            </div>
+                                            <div id="player2ndCardAnime" class="poker-flip flippedBack">
+                                                <div class="open_card-poker_back"></div>
+                                                <div class="open_card-poker h num-2" id="player2ndCard" style=""><span>2</span></div>
+                                            </div>
+                                        <br>
+                                            <div id="player3rdCardAnime" class="poker-flip flippedBackPlayer3rd" style="opacity: 1;display: none;">
+                                                <div class="open_card-poker_back poker-extra"></div>
+                                                <div class="open_card-poker poker-extra s num-12" id="player3rdCard" style=""><span>Q</span></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                    <dl class="open_card-show" id="banker-dl">
+                                        <dt>
+                                            <div id="bankerWin"  class="winner-logo"><img src="images/winner_bg.png"><label>WIN</label></div> 
+                                            <div id="bankerBg"> <font id="bankerHandValueTitle">BANKER</font><span id="bankerHandValue">0</span></div>
+                                        </dt>
+                                        <dd>
+                                            <div id="banker2ndCardAnime" class="poker-flip flippedBack">
+                                                <div class="open_card-poker_back"></div>
+                                                <div class="open_card-poker d num-1" id="banker2ndCard" style=""><span>A</span></div>
+                                            </div>
+                                            <div id="banker1stCardAnime" class="poker-flip flippedBack">
+                                                <div class="open_card-poker_back"></div>
+                                                <div class="open_card-poker h num-11" id="banker1stCard" style=""><span>J</span></div>
+                                            </div>
+                                            <br>
+                                            <div id="banker3rdCardAnime" class="poker-flip flippedBackBanker3rd" style="opacity: 1;display: none;">
+                                                <div class="open_card-poker_back poker-extra"></div>
+                                                <div class="open_card-poker poker-extra d num-4" id="banker3rdCard" style=""><span>4</span></div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                  
+                                            <div id="tieWin"  class="winner-logo"><img src="images/winner_bg.png"><label>TIE</label></div> 
+                                            <!-- <font id="bankerHandValueTitle">BANKER</font><span id="bankerHandValue">0</span> -->
+                                      
+                                    </div>
+                                </div> 
+                             </div>
+						<!-- /result  -->
+	 </div>
+	</div>
+	<div class="bottom-height">
+		 <div class="table-section-header">
+		 	<div class="table-section-header-left">
+		 		<div class="table-text-b">
+		 			<a href="#">B</a>
+		 		</div>
+		 		<div class="table-text-p">
+		 			<a href="#">P</a>
+		 		</div>
+		 	</div>
+		 	<div class="table-section-header-right">
+		 		&nbsp;
+		 	</div>
+		</div>
+		<div class="table-section-article">
+		 	 <div class="table-data">
+             <table width="100%" cellpadding="0" cellspacing="0" border="0">               
+                <tbody>
+                    <tr>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/t.png"/></td>
+                        <td><img src="images/t.png"/></td>
+                        <td><img src="images/t.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                     </tr>
+                      <tr>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/t.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                         <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                         <td><img src="images/b.png"/></td>
+                        <td><img src="images/b.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td><img src="images/p.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                </tbody>
+            </table>
+          </div>
+		</div>
+		<div class="table-section-article1">
+		 	 <div class="table-data1">
+             <table width="100%" cellpadding="0" cellspacing="0" border="0">               
+                <tbody>
+                    <tr>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                       <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                      <tr>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                       <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                     <tr>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td><img src="images/b-c.png"/></td>
+                        <td><img src="images/p-c.png"/></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                     </tr>
+                </tbody>
+            </table>
+          </div>
+		</div>
+	</div>
+	</div>
+
+
+<!-- Modal content -->
+<div id="myModal" class="modal">  
+  <div class="modal-content">
+   <div>
+   <!--<span class="close">&times;</span> -->
+    <p>Successfully place bet.</p>
+   </div>
+  </div>
+</div>
+<!-- /Modal content -->
+
+
+<!-- Modal content -->
+<div id="stop-bet" class="modal">  
+  <div class="modal-content1">
+   <div>
+   <!--<span class="close">&times;</span> -->
+    <p> stop betting time's up</p>
+   </div>
+  </div>
+</div>
+<!-- /Modal content -->
+
+
+<!-- warningPopup  -->
+<div class="warningPopup">
+	Either banker / player can place bet
+</div>
+<!-- /warningPopup -->
+
+
+<div class="setting-popup">
+	<div class="setting-popup-header">
+		<p class="left">SET</p>
+		<div class="right close">&times; </div>
+	</div>
+	<div class="setting-popup-article">
+		<div class="form-group">
+			<div class="title-article left">
+				<p>Background Music</p>
+			</div>
+			<label class="switch right"><input type="checkbox" id="bgChange" checked="true"><div class="slider round"><!--ADDED HTML --><span class="on">ON</span><span class="off">OFF</span><!--END--></div></label>
+		</div>
+		<!-- <div class="form-group">
+            <div class="volume-control">
+                <div class="control-minus" id="minus" onclick="plusMinusVol(false);">
+                    <i class="fa fa-volume-off" aria-hidden="true"></i>
+                </div>
+                <div class="progress">
+                    <div id="myProgress">
+                      <div id="myBar" style="width:20%"></div>
+                    </div>
+                    <span>20%</span>
+                </div>
+                <div class="control-plus" id="plus" onclick="plusMinusVol(true);">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div> -->
+		<div class="form-group">
+			<div class="title-article left">
+				<p>Streaming Audio</p>
+			</div>
+			<label class="switch right"><input type="checkbox" id="togBtn"><div class="slider round"><!--ADDED HTML --><span class="on">ON</span><span class="off">OFF</span><!--END--></div></label>
+		</div>
+		<div class="form-group">
+			<div class="title-article left">
+				<p>Results Sound</p>
+			</div>
+			<label class="switch right"><input type="checkbox" id="togBtn"><div class="slider round"><!--ADDED HTML --><span class="on">ON</span><span class="off">OFF</span><!--END--></div></label>
+		</div>
+		<div class="form-group">
+			<div class="title-article left">
+				<p>Betting Sound</p>
+			</div>
+			<label class="switch right"><input type="checkbox" id="togBtn"><div class="slider round"><!--ADDED HTML --><span class="on">ON</span><span class="off">OFF</span><!--END--></div></label>
+		</div>
+		<div class="form-group">
+			<div class="reload-btn left">
+				<button type="button"><i class="fa fa-undo" aria-hidden="true"></i> Reload</button>
+			</div>
+			<div class="reload-btn left">
+				<button type="button"><i class="fa fa-wifi" aria-hidden="true"></i> Line</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Loding Screen -->
+<!-- <section class="loading">
+    <div class="circle">
+        <p>Loading...</p>
+    </div>
+</section> -->
+
+
+
+<!-- chip setting popup start-->
+<div id="setChips" class="setting_con" style="z-index: 100;display: none;">
+        <div class="chips_con">
+            <h4>Please Select <strong>Five Chips</strong></h4>
+            <ul id="setChipsUl">
+                <li id="" class="select"><span><p id="1" class="chips_1" data-amount="">10</p></span></li>
+                <li id="" class="select"><span><p id="2" class="chips_2" data-amount="">20</p></span></li>
+                <li id="" class="select"><span><p id="3" class="chips_5" data-amount="">50</p></span></li>
+                <li id="" class="select"><span><p id="4" class="chips_10" data-amount="">100</p></span></li>
+                <li id="" class="select"><span><p id="5" class="chips_20" data-amount="">500</p></span></li>
+                <li id=""><span><p id="6" class="chips_50" data-amount="">1K</p></span></li>
+                <li id=""><span><p id="7" class="chips_100" data-amount="">5K</p></span></li>
+                <li id=""><span><p id="8" class="chips_200" data-amount="">10K</p></span></li>
+                <li id=""><span><p id="9" class="chips_500" data-amount="">20K</p></span></li>
+               <li id=""><span><p id="10" class="chips_1k" data-amount="">50K</p></span></li>
+               <li id=""><span><p id="11" class="chips_2k" data-amount="">100K</p></span></li>
+               <li id=""><span><p id="12" class="chips_5k" data-amount="">200K</p></span></li>
+            </ul>
+        </div>
+        <div class="user_setting_con">
+         <!-- <div id="userSet" class="user_set">
+             <h5>Please set your desired chip amount</h5>
+             <dl>
+                 <dt>
+                     <input type="text" id="customChipSetting" value="0" maxlength="6" disabled="readonly">
+                 </dt>
+                 <dd id="chipsAmountUnit" style="display: none;">
+                     <span>X</span><span id="currencyTypeUnit">1</span>
+                     <p>Chips Amount Unit</p>
+                 </dd>
+             </dl>
+             <div id="userChip" class="user_chip"><p id="customChipShowAmount">0</p></div>
+         </div> -->
+           <!--  <div class="keyboard">
+               <ol>
+                   
+                   <li data-num="1">1</li>
+                   
+                   <li data-num="2">2</li>
+                   
+                   <li data-num="3">3</li>
+                   
+                   <li data-num="4">4</li>
+                   
+                   <li data-num="5">5</li>
+                   
+                   <li data-num="6">6</li>
+                   
+                   <li data-num="7">7</li>
+                   
+                   <li data-num="8">8</li>
+                   
+                   <li data-num="9">9</li>
+                   
+               </ol>
+               <ol>
+                   <li data-num="-1">Del</li>
+                   <li data-num="0">0</li>
+               </ol>
+           </div> -->
+            <div class="btn_con">
+                <input type="button" id="chipsCancelBtn" value="Cancel" class="btn_bet_cancel">
+                <input type="button" id="chipsSubmitBtn" value="Submit" class="btn_bet_confirm">
+            </div>
+        </div>
+    </div>
+
+<!-- chip setting popup end -->
+
+<!-- Timer parameters -->
+<!-- <input id="timerr_val" value="11" type="hidden"/> -->
+<input id="timerSeconds" value="10" type="hidden"/>
+
+
+<!--mobile view end -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/ui_bet_b.js"></script>
+<script type="text/javascript" src="js/pagechanger.js"></script>
+<script>
+document.addEventListener('touchmove',
+function(e) {
+e.preventDefault();
+}, {passive:false});
+</script>
+
+<script type="text/javascript" src="js/hammer.js"></script>
+<script type="text/javascript">
+var elm = document.getElementsByClassName('container')[0];
+var hammertime = new Hammer(elm, {});
+hammertime.get('pinch').set({
+  enable: true
+});
+hammertime.on('doubletap  pinchend', function (ev) {
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+@media only screen and (min-width:1025px) and (max-width:1199px){
+.bet_zone, .bet_zone_ins, .dragon_tiger.bet_zone{width:1000px;left: calc(50% - 522px);
+height: 200px;
+}
+.top-height{height:82%;}
+.bottom-height{height:18%;}
+.function_zone, .function_zone_many{width:100%;left: 0px;}
+.tool_btn {margin-left: 5px;}
+label.mainvalue{left:-231px;}
+
+}
+
+@media only screen and (max-width:1024px) {
+.bet_zone .box_con_all, .bet_zone_ins .box_con_all{width:920px;margin:0px auto;}
+label.mainvalue{left:-207px;}
+.function_zone, .function_zone_many{width:100%;left:0px;}
+.tool_btn{margin-left: 5px;}
+#weekly-news{width:310px;}
+.top-height{height:85%;}
+.bottom-height{height:15%;}
+.game_list .now{width:117px;}
+.game_list li:hover {width:117px;}
+img#myBtn{width:80px;}
+.modal-content{width:70%;margin: 0px 108px auto;}
+.qrcode-scan img{width:92px;}
+}
+
+@media only screen and (max-width:768px) {
+.top{width:100%;height:56px;}
+.left_list{width:65%;float:left;}
+.left_list ol{width:350px;float:left;}
+.left_list h1{width:130px;float:left;margin:5px 8px 5px 8px;}
+.language a{width:100px;}
+.left_list ol li{font-size:14px;margin-right:10px;}
+.card_zone .player ul li p, .card_zone .banker ul li p{width:50px;height:65px;}
+.card_zone .player dl dt, .card_zone .banker dl dt{font-size:12px;line-height:0;}
+.info_left h5{font-size:12px;}
+.info_left .title{padding:1px 10px;}
+.card_zone .player, .card_zone .banker{height:140px;}
+.time dt{height:65px;line-height: 65px;}
+.time dt p{font-size: 38px;}
+.bet_zone .box_con_all, .bet_zone_ins .box_con_all{width:670px;margin:0px auto;}
+.bet_zone, .bet_zone_ins, .dragon_tiger.bet_zone{top:calc(50% - 3px);}
+.function_zone, .function_zone_many{width:889px;left:0px;}
+.tool_btn{width:42px;margin-left:5px;}
+label.mainvalue {left: -148px;}
+.chips{width: 440px;}
+.chips .chips_set{right:-45px;}
+#weekly-news{width:230px;}
+.top-height{height:80%;}
+.bottom-height{height:20%;}
+.game_list .now{width:87px;}
+.game_list li:hover {width:87px;}
+img#myBtn{width:80px;}
+.modal-content{width:70%;margin: 0px 108px auto;}
+.qrcode-scan img{width:92px;}
+}
+
+@media only screen and (min-width:600) and (max-width:767px){
+	
+}

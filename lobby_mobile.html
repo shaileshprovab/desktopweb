@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="theme-color" content="#030303"/>
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive_mob.css" />
+    <title>Lobby</title>
+    <style type="text/css">
+        .table_road_set {cursor: pointer !important;}
+        .game_list li{ cursor: pointer !important;}
+    </style>
+    </head>
+    <body id="touch-move">
+        <div class="loader" style="display: block;">
+            <div class="abgne-loading" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);height: 30vmin;width: 30vmin;">
+            <div class="loading_text" style="font-size: 5vmin">Loading...</div>
+            <div class="loading"></div>
+            </div>
+        </div>
+        <div class="container" style="display: none;">
+             <ul class="game_list" style="z-index: 8;">
+            <li class="go_back" id="lobby" style="">
+            </li>
+            <li class="baccarat now" data-type="1" id="gameListBac" name="gameList" style="">
+                <ol class="tip_icon">
+                    <li class="new">
+                    </li>
+                </ol>
+            </li>
+            <li class="roulette new" data-type="2" id="gameListRou" name="gameList" style="">
+                <ol class="tip_icon">
+                    <li class="new">
+                    </li>
+                </ol>
+            </li>
+        </ul>
+        <div class="gameListBac game-tabs">
+            
+        
+        <div class="game_title" style="z-index: 8;">
+            <h2 id="gameTitle">
+                Baccarat
+            </h2>
+        </div>
+        
+        <div class="table_list more_type" id="bacTable1" style="visibility: visible;">
+            <div class="table_road_set" id="tableID1" style="">
+                <div id="gameBackground" style="display: none">
+                </div>
+                <div class="table_head">
+                    <h4 id="tableID">
+                        Baccarat 1
+                    </h4>
+                    <ul>
+                        <li class="banker" id="bankerCounts">
+                            15
+                        </li>
+                        <li class="player" id="playerCounts">
+                            20
+                        </li>
+                        <li class="tie" id="tieCounts">
+                            9
+                        </li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <img alt="dealers" id="dealerImage" src="images/girl1.jpg">
+                        <div class="game_info" style="z-index: 9; display: none">
+                            shuffling
+                        </div>
+                        <div class="road_all" id="road">
+                            <div class="bead_road" id="beadRoad" style="">
+                                <div class="road-grid" id="beadRoadGrid" style="left: -48px;">
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_0_0" name="beadRoadDiv_1_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_0_1" name="beadRoadDiv_1_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_0_2" name="beadRoadDiv_1_0" style="grid-area: 3/1">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_0_3" name="beadRoadDiv_1_0" style="grid-area: 4/1">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_0_4" name="beadRoadDiv_1_0" style="grid-area: 5/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_0_5" name="beadRoadDiv_1_0" style="grid-area: 6/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_1_0" name="beadRoadDiv_1_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_1_1" name="beadRoadDiv_1_1" style="grid-area: 2/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_1_2" name="beadRoadDiv_1_1" style="grid-area: 3/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_1_3" name="beadRoadDiv_1_1" style="grid-area: 4/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_1_4" name="beadRoadDiv_1_1" style="grid-area: 5/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_1_5" name="beadRoadDiv_1_1" style="grid-area: 6/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_2_0" name="beadRoadDiv_1_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_2_1" name="beadRoadDiv_1_2" style="grid-area: 2/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_2_2" name="beadRoadDiv_1_2" style="grid-area: 3/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_2_3" name="beadRoadDiv_1_2" style="grid-area: 4/3">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_2_4" name="beadRoadDiv_1_2" style="grid-area: 5/3">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_2_5" name="beadRoadDiv_1_2" style="grid-area: 6/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_3_0" name="beadRoadDiv_1_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_3_1" name="beadRoadDiv_1_3" style="grid-area: 2/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_3_2" name="beadRoadDiv_1_3" style="grid-area: 3/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_3_3" name="beadRoadDiv_1_3" style="grid-area: 4/4">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_3_4" name="beadRoadDiv_1_3" style="grid-area: 5/4">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_3_5" name="beadRoadDiv_1_3" style="grid-area: 6/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_4_0" name="beadRoadDiv_1_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_4_1" name="beadRoadDiv_1_4" style="grid-area: 2/5">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_4_2" name="beadRoadDiv_1_4" style="grid-area: 3/5">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_4_3" name="beadRoadDiv_1_4" style="grid-area: 4/5">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_4_4" name="beadRoadDiv_1_4" style="grid-area: 5/5">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_4_5" name="beadRoadDiv_1_4" style="grid-area: 6/5">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_5_0" name="beadRoadDiv_1_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_5_1" name="beadRoadDiv_1_5" style="grid-area: 2/6">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_5_2" name="beadRoadDiv_1_5" style="grid-area: 3/6">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player pair-player-down" id="beadRoadDiv_1_5_3" name="beadRoadDiv_1_5" style="grid-area: 4/6">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_5_4" name="beadRoadDiv_1_5" style="grid-area: 5/6">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_5_5" name="beadRoadDiv_1_5" style="grid-area: 6/6">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_6_0" name="beadRoadDiv_1_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_6_1" name="beadRoadDiv_1_6" style="grid-area: 2/7">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_6_2" name="beadRoadDiv_1_6" style="grid-area: 3/7">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_6_3" name="beadRoadDiv_1_6" style="grid-area: 4/7">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-tie" id="beadRoadDiv_1_6_4" name="beadRoadDiv_1_6" style="grid-area: 5/7">
+                                        <p id="gridMark">
+                                            T
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_6_5" name="beadRoadDiv_1_6" style="grid-area: 6/7">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_1_7_0" name="beadRoadDiv_1_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_1_7_1" name="beadRoadDiv_1_7" style="grid-area: 2/8">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big_road" id="bigRoad" style="">
+                                <div class="road-grid" id="bigRoadGrid" style="left: 0px;">
+                                    <div class="" id="bigRoadDiv_1_0_0" name="bigRoadDiv_1_0" style="grid-area: 1/1">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_0_1" name="bigRoadDiv_1_0" style="grid-area: 2/1">
+                                        <div class="road-dot line-tie-up line-tie-down dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                                2
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_1_0" name="bigRoadDiv_1_1" style="grid-area: 1/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_1_1" name="bigRoadDiv_1_1" style="grid-area: 2/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_1_2" name="bigRoadDiv_1_1" style="grid-area: 3/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_1_3" name="bigRoadDiv_1_1" style="grid-area: 4/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_2_0" name="bigRoadDiv_1_2" style="grid-area: 1/3">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_2_1" name="bigRoadDiv_1_2" style="grid-area: 2/3">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_3_0" name="bigRoadDiv_1_3" style="grid-area: 1/4">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_4_0" name="bigRoadDiv_1_4" style="grid-area: 1/5">
+                                        <div class="road-dot line-tie dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_5_0" name="bigRoadDiv_1_5" style="grid-area: 1/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_5_1" name="bigRoadDiv_1_5" style="grid-area: 2/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_6_0" name="bigRoadDiv_1_6" style="grid-area: 1/7">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_6_1" name="bigRoadDiv_1_6" style="grid-area: 2/7">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_0" name="bigRoadDiv_1_7" style="grid-area: 1/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_1" name="bigRoadDiv_1_7" style="grid-area: 2/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_2" name="bigRoadDiv_1_7" style="grid-area: 3/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_3" name="bigRoadDiv_1_7" style="grid-area: 4/8">
+                                        <div class="road-dot line-tie-up line-tie-down dot-player" id="roadType">
+                                            <p id="gridMark">
+                                                2
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_4" name="bigRoadDiv_1_7" style="grid-area: 5/8">
+                                        <div class="road-dot line-tie dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_7_5" name="bigRoadDiv_1_7" style="grid-area: 6/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_8_5" name="bigRoadDiv_1_8" style="grid-area: 6/9">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_9_5" name="bigRoadDiv_1_9" style="grid-area: 6/10">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_8_0" name="bigRoadDiv_1_8" style="grid-area: 1/9">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_8_1" name="bigRoadDiv_1_8" style="grid-area: 2/9">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_8_2" name="bigRoadDiv_1_8" style="grid-area: 3/9">
+                                        <div class="road-dot line-tie dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_8_3" name="bigRoadDiv_1_8" style="grid-area: 4/9">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_9_0" name="bigRoadDiv_1_9" style="grid-area: 1/10">
+                                        <div class="road-dot dot-player pair-player-down" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_10_0" name="bigRoadDiv_1_10" style="grid-area: 1/11">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_10_1" name="bigRoadDiv_1_10" style="grid-area: 2/11">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_11_0" name="bigRoadDiv_1_11" style="grid-area: 1/12">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_12_0" name="bigRoadDiv_1_12" style="grid-area: 1/13">
+                                        <div class="road-dot line-tie dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_13_0" name="bigRoadDiv_1_13" style="grid-area: 1/14">
+                                        <div class="road-dot line-tie dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_13_1" name="bigRoadDiv_1_13" style="grid-area: 2/14">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_14_0" name="bigRoadDiv_1_14" style="grid-area: 1/15">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_1_15_0" name="bigRoadDiv_1_15" style="grid-area: 1/16">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bigeye_road" id="bigEyeRoad" style="">
+                                <div class="road-grid" id="bigEyeRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_0_0" name="bigEyeRoadDiv_1_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_1_0" name="bigEyeRoadDiv_1_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_2_0" name="bigEyeRoadDiv_1_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_3_0" name="bigEyeRoadDiv_1_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_4_0" name="bigEyeRoadDiv_1_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_5_0" name="bigEyeRoadDiv_1_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_5_1" name="bigEyeRoadDiv_1_5" style="grid-area: 2/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_6_0" name="bigEyeRoadDiv_1_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_7_0" name="bigEyeRoadDiv_1_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_7_1" name="bigEyeRoadDiv_1_7" style="grid-area: 2/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_8_0" name="bigEyeRoadDiv_1_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_8_1" name="bigEyeRoadDiv_1_8" style="grid-area: 2/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_8_2" name="bigEyeRoadDiv_1_8" style="grid-area: 3/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_9_0" name="bigEyeRoadDiv_1_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_10_0" name="bigEyeRoadDiv_1_10" style="grid-area: 1/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_10_1" name="bigEyeRoadDiv_1_10" style="grid-area: 2/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_10_2" name="bigEyeRoadDiv_1_10" style="grid-area: 3/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_10_3" name="bigEyeRoadDiv_1_10" style="grid-area: 4/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_10_4" name="bigEyeRoadDiv_1_10" style="grid-area: 5/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_11_0" name="bigEyeRoadDiv_1_11" style="grid-area: 1/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_12_0" name="bigEyeRoadDiv_1_12" style="grid-area: 1/13">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_12_1" name="bigEyeRoadDiv_1_12" style="grid-area: 2/13">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_12_2" name="bigEyeRoadDiv_1_12" style="grid-area: 3/13">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_13_0" name="bigEyeRoadDiv_1_13" style="grid-area: 1/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_13_1" name="bigEyeRoadDiv_1_13" style="grid-area: 2/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_13_2" name="bigEyeRoadDiv_1_13" style="grid-area: 3/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_13_3" name="bigEyeRoadDiv_1_13" style="grid-area: 4/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_13_4" name="bigEyeRoadDiv_1_13" style="grid-area: 5/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_1_14_0" name="bigEyeRoadDiv_1_14" style="grid-area: 1/15">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_15_0" name="bigEyeRoadDiv_1_15" style="grid-area: 1/16">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_15_1" name="bigEyeRoadDiv_1_15" style="grid-area: 2/16">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_1_15_2" name="bigEyeRoadDiv_1_15" style="grid-area: 3/16">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small_road" id="smallRoad" style="">
+                                <div class="road-grid" id="smallRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_0_0" name="smallRoadDiv_1_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_0_1" name="smallRoadDiv_1_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_0" name="smallRoadDiv_1_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_1" name="smallRoadDiv_1_1" style="grid-area: 2/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_2" name="smallRoadDiv_1_1" style="grid-area: 3/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_3" name="smallRoadDiv_1_1" style="grid-area: 4/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_4" name="smallRoadDiv_1_1" style="grid-area: 5/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_1_5" name="smallRoadDiv_1_1" style="grid-area: 6/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_2_0" name="smallRoadDiv_1_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_3_0" name="smallRoadDiv_1_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_4_0" name="smallRoadDiv_1_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_4_1" name="smallRoadDiv_1_4" style="grid-area: 2/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_4_2" name="smallRoadDiv_1_4" style="grid-area: 3/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_4_3" name="smallRoadDiv_1_4" style="grid-area: 4/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_4_4" name="smallRoadDiv_1_4" style="grid-area: 5/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_5_0" name="smallRoadDiv_1_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_6_0" name="smallRoadDiv_1_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_7_0" name="smallRoadDiv_1_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_8_0" name="smallRoadDiv_1_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_9_0" name="smallRoadDiv_1_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_9_1" name="smallRoadDiv_1_9" style="grid-area: 2/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_10_0" name="smallRoadDiv_1_10" style="grid-area: 1/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_11_0" name="smallRoadDiv_1_11" style="grid-area: 1/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_12_0" name="smallRoadDiv_1_12" style="grid-area: 1/13">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_13_0" name="smallRoadDiv_1_13" style="grid-area: 1/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_13_1" name="smallRoadDiv_1_13" style="grid-area: 2/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_1_13_2" name="smallRoadDiv_1_13" style="grid-area: 3/14">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_1_14_0" name="smallRoadDiv_1_14" style="grid-area: 1/15">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cockroch_road" id="cockrochRoad" style="">
+                                <div class="road-grid" id="cockrochRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_0_0" name="cockrochRoadDiv_1_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_0_1" name="cockrochRoadDiv_1_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_1_0" name="cockrochRoadDiv_1_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_1_1" name="cockrochRoadDiv_1_1" style="grid-area: 2/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_2_0" name="cockrochRoadDiv_1_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_2_1" name="cockrochRoadDiv_1_2" style="grid-area: 2/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_2_2" name="cockrochRoadDiv_1_2" style="grid-area: 3/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_0" name="cockrochRoadDiv_1_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_1" name="cockrochRoadDiv_1_3" style="grid-area: 2/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_2" name="cockrochRoadDiv_1_3" style="grid-area: 3/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_3" name="cockrochRoadDiv_1_3" style="grid-area: 4/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_4" name="cockrochRoadDiv_1_3" style="grid-area: 5/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_3_5" name="cockrochRoadDiv_1_3" style="grid-area: 6/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_4_0" name="cockrochRoadDiv_1_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_5_0" name="cockrochRoadDiv_1_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_6_0" name="cockrochRoadDiv_1_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_7_0" name="cockrochRoadDiv_1_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_8_0" name="cockrochRoadDiv_1_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_8_1" name="cockrochRoadDiv_1_8" style="grid-area: 2/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_9_0" name="cockrochRoadDiv_1_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_10_0" name="cockrochRoadDiv_1_10" style="grid-area: 1/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_1_10_1" name="cockrochRoadDiv_1_10" style="grid-area: 2/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_11_0" name="cockrochRoadDiv_1_11" style="grid-area: 1/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_11_1" name="cockrochRoadDiv_1_11" style="grid-area: 2/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_11_2" name="cockrochRoadDiv_1_11" style="grid-area: 3/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_1_11_3" name="cockrochRoadDiv_1_11" style="grid-area: 4/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </img>
+                </div>
+                <div class="table_footer">
+                    <p id="goodRoad">
+                    </p>
+                </div>
+                <div class="text_square" id="status" style="">
+                    Drawing
+                </div>
+                <div class="text_square" id="statusNoMsg" style="display: none">
+                </div>
+                <div class="time_square finish" id="countdown1" style="display: none;">
+                    0
+                </div>
+            </div>
+            <div class="table_road_set" id="tableID2" style="">
+                <div id="gameBackground" style="display: none">
+                </div>
+                <div class="table_head">
+                    <h4 id="tableID">
+                        Baccarat 2
+                    </h4>
+                    <ul>
+                        <li class="banker" id="bankerCounts">
+                            7
+                        </li>
+                        <li class="player" id="playerCounts">
+                            18
+                        </li>
+                        <li class="tie" id="tieCounts">
+                            0
+                        </li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <img alt="dealers" id="dealerImage"  src="images/girl1.jpg">
+                        <div class="game_info" style="z-index: 9; display: none">
+                            shuffling
+                        </div>
+                        <div class="road_all" id="road">
+                            <div class="bead_road" id="beadRoad" style="">
+                                <div class="road-grid" id="beadRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_0_0" name="beadRoadDiv_2_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_0_1" name="beadRoadDiv_2_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_0_2" name="beadRoadDiv_2_0" style="grid-area: 3/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_0_3" name="beadRoadDiv_2_0" style="grid-area: 4/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_0_4" name="beadRoadDiv_2_0" style="grid-area: 5/1">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_0_5" name="beadRoadDiv_2_0" style="grid-area: 6/1">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_1_0" name="beadRoadDiv_2_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player pair-player-down" id="beadRoadDiv_2_1_1" name="beadRoadDiv_2_1" style="grid-area: 2/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_1_2" name="beadRoadDiv_2_1" style="grid-area: 3/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_1_3" name="beadRoadDiv_2_1" style="grid-area: 4/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_1_4" name="beadRoadDiv_2_1" style="grid-area: 5/2">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player pair-banker-up" id="beadRoadDiv_2_1_5" name="beadRoadDiv_2_1" style="grid-area: 6/2">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_2_0" name="beadRoadDiv_2_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_2_1" name="beadRoadDiv_2_2" style="grid-area: 2/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_2_2" name="beadRoadDiv_2_2" style="grid-area: 3/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_2_3" name="beadRoadDiv_2_2" style="grid-area: 4/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_2_4" name="beadRoadDiv_2_2" style="grid-area: 5/3">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_2_5" name="beadRoadDiv_2_2" style="grid-area: 6/3">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_3_0" name="beadRoadDiv_2_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_3_1" name="beadRoadDiv_2_3" style="grid-area: 2/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_3_2" name="beadRoadDiv_2_3" style="grid-area: 3/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="beadRoadDiv_2_3_3" name="beadRoadDiv_2_3" style="grid-area: 4/4">
+                                        <p id="gridMark">
+                                            B
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_3_4" name="beadRoadDiv_2_3" style="grid-area: 5/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_3_5" name="beadRoadDiv_2_3" style="grid-area: 6/4">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="beadRoadDiv_2_4_0" name="beadRoadDiv_2_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                            P
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="big_road" id="bigRoad" style="">
+                                <div class="road-grid" id="bigRoadGrid" style="left: 0px;">
+                                    <div class="" id="bigRoadDiv_2_0_0" name="bigRoadDiv_2_0" style="grid-area: 1/1">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_1_0" name="bigRoadDiv_2_1" style="grid-area: 1/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_1_1" name="bigRoadDiv_2_1" style="grid-area: 2/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_1_2" name="bigRoadDiv_2_1" style="grid-area: 3/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_1_3" name="bigRoadDiv_2_1" style="grid-area: 4/2">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_2_0" name="bigRoadDiv_2_2" style="grid-area: 1/3">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_2_1" name="bigRoadDiv_2_2" style="grid-area: 2/3">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_3_0" name="bigRoadDiv_2_3" style="grid-area: 1/4">
+                                        <div class="road-dot dot-player pair-player-down" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_3_1" name="bigRoadDiv_2_3" style="grid-area: 2/4">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_4_0" name="bigRoadDiv_2_4" style="grid-area: 1/5">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_4_1" name="bigRoadDiv_2_4" style="grid-area: 2/5">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_0" name="bigRoadDiv_2_5" style="grid-area: 1/6">
+                                        <div class="road-dot dot-player pair-banker-up" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_1" name="bigRoadDiv_2_5" style="grid-area: 2/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_2" name="bigRoadDiv_2_5" style="grid-area: 3/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_3" name="bigRoadDiv_2_5" style="grid-area: 4/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_4" name="bigRoadDiv_2_5" style="grid-area: 5/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_5_5" name="bigRoadDiv_2_5" style="grid-area: 6/6">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_6_0" name="bigRoadDiv_2_6" style="grid-area: 1/7">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_7_0" name="bigRoadDiv_2_7" style="grid-area: 1/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_7_1" name="bigRoadDiv_2_7" style="grid-area: 2/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_7_2" name="bigRoadDiv_2_7" style="grid-area: 3/8">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_8_0" name="bigRoadDiv_2_8" style="grid-area: 1/9">
+                                        <div class="road-dot dot-banker" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_9_0" name="bigRoadDiv_2_9" style="grid-area: 1/10">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_9_1" name="bigRoadDiv_2_9" style="grid-area: 2/10">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="" id="bigRoadDiv_2_9_2" name="bigRoadDiv_2_9" style="grid-area: 3/10">
+                                        <div class="road-dot dot-player" id="roadType">
+                                            <p id="gridMark">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bigeye_road" id="bigEyeRoad" style="">
+                                <div class="road-grid" id="bigEyeRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_0_0" name="bigEyeRoadDiv_2_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_1_0" name="bigEyeRoadDiv_2_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_1_1" name="bigEyeRoadDiv_2_1" style="grid-area: 2/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_2_0" name="bigEyeRoadDiv_2_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_3_0" name="bigEyeRoadDiv_2_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_4_0" name="bigEyeRoadDiv_2_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_5_0" name="bigEyeRoadDiv_2_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_5_1" name="bigEyeRoadDiv_2_5" style="grid-area: 2/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_5_2" name="bigEyeRoadDiv_2_5" style="grid-area: 3/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_5_3" name="bigEyeRoadDiv_2_5" style="grid-area: 4/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_5_4" name="bigEyeRoadDiv_2_5" style="grid-area: 5/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_6_0" name="bigEyeRoadDiv_2_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_7_0" name="bigEyeRoadDiv_2_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_7_1" name="bigEyeRoadDiv_2_7" style="grid-area: 2/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_7_2" name="bigEyeRoadDiv_2_7" style="grid-area: 3/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_8_0" name="bigEyeRoadDiv_2_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_8_1" name="bigEyeRoadDiv_2_8" style="grid-area: 2/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_8_2" name="bigEyeRoadDiv_2_8" style="grid-area: 3/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_9_0" name="bigEyeRoadDiv_2_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_10_0" name="bigEyeRoadDiv_2_10" style="grid-area: 1/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_10_1" name="bigEyeRoadDiv_2_10" style="grid-area: 2/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="bigEyeRoadDiv_2_10_2" name="bigEyeRoadDiv_2_10" style="grid-area: 3/11">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="bigEyeRoadDiv_2_11_0" name="bigEyeRoadDiv_2_11" style="grid-area: 1/12">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="small_road" id="smallRoad" style="">
+                                <div class="road-grid" id="smallRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_0_0" name="smallRoadDiv_2_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_0_1" name="smallRoadDiv_2_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_1_0" name="smallRoadDiv_2_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_2_0" name="smallRoadDiv_2_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_3_0" name="smallRoadDiv_2_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_3_1" name="smallRoadDiv_2_3" style="grid-area: 2/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_3_2" name="smallRoadDiv_2_3" style="grid-area: 3/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_4_0" name="smallRoadDiv_2_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_5_0" name="smallRoadDiv_2_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_5_1" name="smallRoadDiv_2_5" style="grid-area: 2/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_5_2" name="smallRoadDiv_2_5" style="grid-area: 3/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_6_0" name="smallRoadDiv_2_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_6_1" name="smallRoadDiv_2_6" style="grid-area: 2/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_7_0" name="smallRoadDiv_2_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_7_1" name="smallRoadDiv_2_7" style="grid-area: 2/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="smallRoadDiv_2_8_0" name="smallRoadDiv_2_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_9_0" name="smallRoadDiv_2_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_9_1" name="smallRoadDiv_2_9" style="grid-area: 2/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="smallRoadDiv_2_9_2" name="smallRoadDiv_2_9" style="grid-area: 3/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cockroch_road" id="cockrochRoad" style="">
+                                <div class="road-grid" id="cockrochRoadGrid" style="left: 0px;">
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_0_0" name="cockrochRoadDiv_2_0" style="grid-area: 1/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_0_1" name="cockrochRoadDiv_2_0" style="grid-area: 2/1">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_1_0" name="cockrochRoadDiv_2_1" style="grid-area: 1/2">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_2_0" name="cockrochRoadDiv_2_2" style="grid-area: 1/3">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_3_0" name="cockrochRoadDiv_2_3" style="grid-area: 1/4">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_4_0" name="cockrochRoadDiv_2_4" style="grid-area: 1/5">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_5_0" name="cockrochRoadDiv_2_5" style="grid-area: 1/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_5_1" name="cockrochRoadDiv_2_5" style="grid-area: 2/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_5_2" name="cockrochRoadDiv_2_5" style="grid-area: 3/6">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_6_0" name="cockrochRoadDiv_2_6" style="grid-area: 1/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_6_1" name="cockrochRoadDiv_2_6" style="grid-area: 2/7">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_7_0" name="cockrochRoadDiv_2_7" style="grid-area: 1/8">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_8_0" name="cockrochRoadDiv_2_8" style="grid-area: 1/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_8_1" name="cockrochRoadDiv_2_8" style="grid-area: 2/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_8_2" name="cockrochRoadDiv_2_8" style="grid-area: 3/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-player" id="cockrochRoadDiv_2_8_3" name="cockrochRoadDiv_2_8" style="grid-area: 4/9">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                    <div class="road-dot dot-banker" id="cockrochRoadDiv_2_9_0" name="cockrochRoadDiv_2_9" style="grid-area: 1/10">
+                                        <p id="gridMark">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </img>
+                </div>
+                <div class="table_footer">
+                    <p id="goodRoad">
+                    </p>
+                </div>
+                <div class="text_square" id="status" style="display: none;">
+                    Drawing
+                </div>
+                <div class="text_square" id="statusNoMsg" style="display: none">
+                </div>
+                <div class="time_square" id="countdown2" style="">
+                    20
+                </div>
+            </div>
+            
+        </div>
+        </div>
+         <div class="gameListRou game-tabs" style="display:none;">
+            
+        
+        <div class="game_title" style="z-index: 8;">
+            <h2 id="gameTitle">
+                Roulette
+            </h2>
+        </div>
+    </div>
+        <div class="info_user">
+            <ul>
+                <li class="user">
+                    <span>
+                        icon
+                    </span>
+                    demo0726165931742
+                </li>
+                <li class="money">
+                    <span>
+                        icon
+                    </span>
+                    <font id="userBalance">
+                        20,000.00
+                    </font>
+                </li>
+            </ul>
+            <div class="menu" id="menu">
+                <!-- <li class="menu open"> -->
+                <div class="top-menu dropdown">
+                <a href="javascript:;" class="dropbtn" id="menu_btn"><i class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="dropdown-content" id="menu_content">
+                    <a href="javascript:;" class="menu_link">Link 1</a>
+                    <a href="javascript:;" class="menu_link">Link 2</a>
+                    <a href="javascript:;" class="menu_link">Link 3</a>
+                  </div>
+                </a>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+        <!-- JQuery CDN -->
+<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/ui_bet_b.js"></script>
+<script type="text/javascript" src="js/pagechanger.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+    $(document).on('dblclick', 'body, html', function() {
+        return false;
+    });
+        var SITE_URL = window.location.href.replace('lobby_mobile.html', '');
+        $(document).on('click', '.table_road_set', function() {
+            var a = document.createElement('a');
+            $(a).attr('href', SITE_URL + 'game_mobile.html')[0].click();
+            location.replace(SITE_URL + 'game_mobile.html')
+        })
+   });
+</script> 
+
+<script>
+document.addEventListener('touchmove',
+function(e) {
+e.preventDefault();
+}, {passive:false}); 
+</script>
+
+<script type="text/javascript" src="js/hammer.js"></script>
+<script type="text/javascript">
+var elm = document.getElementsByClassName('container')[0];
+var hammertime = new Hammer(elm, {});
+hammertime.get('pinch').set({
+  enable: true
+});
+hammertime.on('doubletap  pinchend', function (ev) {
+});
+</script>
+</body>
+</html>

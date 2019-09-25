@@ -1,0 +1,158 @@
+@media only screen and (max-width:599px) {
+.container{width:100%;}
+.top-header-left{width:81%;padding-left: 10px;}
+.top-header-right{width:10%;}
+.top-header-row1-left{width:32%;}
+.top-header-row1{padding:0px 0px;}
+.top-header-row1-left img{width:100%;padding:5px 0px 0px 13px;}
+.top-header-row1-right{width:48%;}
+.coin-text{width:28%;margin:2px 4px 0px 0px;padding: 3px 4px;text-align: center;}
+.coin-text1{width: 40%;margin: 0px 2px 0px 2px;padding: 0px 2px;text-align: center;}
+.coin-text1 a img{width:15px!important;}
+.table-data{width:100%;overflow:auto;/* height:55px; */}
+.table-data1{width:100%;overflow:auto;/* height:55px; */}
+.bet-coin-section{height:84px;padding:0px 15px 0px 15px;}
+.icon-text{padding:3px 4px;margin: 5px 0px;text-align:center;}
+.progress-bar{padding:3px 4px;margin: 5px 0px 5px 12px;}
+.icon-text a{font-size:10px;}
+.top-header-left a{font-size:10px;}
+.top-header-right a{font-size:10px;}
+.top-header{padding:2px 4px;}
+.video-section-top-right{/* width: 30px;height: 30px; */padding: 5px 6px 5px 0px;font-size:10px;top:0px;right: -108px;}
+.item{right: -27px; top: -50px;}
+.video-section-top-left{padding: 3px;}
+.video-section-top-left p{font-size:10px;}
+.a {width:28px;}
+.video-section-row{height:180px;overflow:hidden;}
+.video-section-bottom-left i{font-size:16px;padding:4px 5px;}
+.video-section-bottom-right i{font-size:16px;padding:4px 5px;}
+.like-hand i{font-size:10px;padding:4px;}
+.like-hand{bottom:35px;}
+/*.bet-table{height:124px;}*/
+.bet-table-top-left{margin:1%;}
+.bet-box-left{padding:2px 4px;}
+.bet-box-left p{font-size:10px;}
+.bet-box-left p span{font-size:10px;}
+.bet-box-left h3{font-size: 12px;font-weight: 600;}
+.bet-table-top-right{margin:1%;}
+.bet-box-bottom1{margin:1%;}
+.bet-box-bottom1 p{font-size:10px;}
+.bet-box-bottom1 p span{font-size:10px;}
+.bet-box-bottom1 h3{font-size:12px;font-weight:600;}
+.bet-box-bottom2{margin:1%;width:31%;}
+.bet-box-bottom2 p{font-size:10px;}
+.bet-box-bottom2 p span{font-size:10px;}
+.bet-box-bottom2 h3{font-size:12px;font-weight:600;}
+.bet-box-bottom3{margin:1%;}
+.bet-box-bottom3 p{font-size:10px;}
+.bet-box-bottom3 p span{font-size:10px;}
+.bet-box-bottom3 h3{font-size:12px;font-weight:600;}
+/*.bet-table-wood{height:350px;}*/
+.best-coin-section1 img{width:50px;}
+.best-coin-section2 img{width:50px;}
+.best-coin-section3 img{width:40px;}
+.best-coin-section4 img{width:40px;}
+.best-coin-section5 img{width:40px;}
+.best-coin-section6 img{width: 44px;border: 2px solid #e7daaf;border-radius: 50%;padding: 4px;margin: 2% 1%;}
+.cointext-right a{font-size:5.333vw;padding:3px 12px;}
+.ok-notok-right-left a i{padding:6px 33px;border-radius:4px;margin: 2px 0px;font-size:12px;}
+.ok-notok-right-right a i{padding:6px 20px;border-radius:4px;margin: 2px 0px;font-size:12px;}
+.ok-notok-right{padding:1px 8px;}
+.table-text-b{padding: 0px 4px;margin-right:5px;}
+.table-text-p{padding: 0px 4px;margin-right:5px;}
+.table-section-header{padding: 3px 4px;}
+.table-data table tbody tr td{padding:0px 0px;text-align:center;}
+.table-data table tbody tr td img{width:8px;}
+.table-data1 table tbody tr td{padding:0px 0px;text-align:center;}
+.table-data1 table tbody tr td img{width:8px;}
+.bet-box-bottom2,.bet-box-bottom1,.bet-box-bottom3{padding:7px 10px;}
+.take-coin-value img, .take-coin-values img{width: 100% !important;}
+.icon-text img{width:13px!important;padding-right: 5px;}
+.icon-text a i{padding-left:10px;}
+span.progress-text-right{font-size:8px;}
+span.progress-text-left{font-size:8px;}
+.setting-popup{position: fixed; width: 90%; height: auto;left: 5%; top: 28%; z-index: 99999; color: #fff; background: rgba(0,0,0,0.9);overflow: auto; margin: unset; padding: 0 0 15px;}
+#imagedivPlayer{margin-left:5px;position: relative;left: 25px;bottom:10px;}
+#imagedivBanker{position: relative;top: -11px;right: 25px;}
+#imagedivPlayer img{width:32%;border-radius: 0.74978vmax;}
+#imagedivBanker img{width:32%;border-radius: 0.74978vmax;}
+.bet-box-bottom2 h3{padding:6px 0px;}
+.bet-box-bottom1 h3{padding: 6px 0px;}
+.bet-box-bottom3 h3{padding: 6px 0px;}
+.bet-table-wood{bottom:36%;}
+.betPlaced label, .betPlacedTie label, .betPlacedP_Pair label, .betPlacedB_Pair label, .betPlacedBanker label{top:-41px;/* display: -webkit-inline-box; */}
+.betPlaced img, .betPlacedTie img, .betPlacedP_Pair img, .betPlacedB_Pair img, .betPlacedBanker img{margin:12px auto;}
+.best-coin-section1 span{position: absolute;top:4.5%;left: 9.5%;font-weight: 600;font-size: 13px;}
+.best-coin-section2 span{position: absolute;top:4.5%;left: 24.5%;font-weight: 600;font-size:13px;}
+.best-coin-section3 span{position: absolute;top:4.5%;left: 38%;font-weight: 600;font-size: 13px;}
+.best-coin-section4 span{position: absolute;top:4.5%;left: 53%;font-weight: 600;font-size: 13px;}
+.best-coin-section5 span{position: absolute;top:4.5%;left: 68%;font-weight: 600;font-size: 13px;}
+.best-coin-section7 span{position: absolute;top:4.5%;left: 82%;font-weight: 600;font-size: 13px;}
+.bet_chips .chips3dSelect-in li {
+    width: 7.84648vmax;
+    height: 7.44678vmax;
+    margin-right: 0.5997vmax;
+}
+#tieWin{position: absolute;top:-16%;left: 39%;}
+.open_card-show dt{top:12vw;}
+#playerWin{top: -28%;left: -4%;}
+#bankerWin{top: -28%;right: -4%;}
+#playerBg{font-size: 4.53333vw;font-weight:bold;}
+#bankerBg{font-size: 4.53333vw;font-weight:bold;}
+
+}
+
+
+
+@media screen and (max-width: 374px)
+{
+	.score img{width:50px;top:-29px;right:-2px; }
+	.score p{font-size: 18px !important;}
+    #tieWin img + label, #bankerWin img + label, #playerWin img + label{font-size:18px;}
+/*     #tiediv img + label, #bankerWin img + label, #playerWin img + label{    top:27%;
+    font-size: 24px;} */
+    #playerWin img{width:60px;}
+    #bankerWin img{width:60px;}
+    #playerWin img + label {left:22%;top:30%;}
+    #bankerWin img + label {border-right:  16px;}
+    .progress{left:4px;}
+    .best-coin-section6 img{width:35px;}
+    .modal-content1{width:180px;}
+    /* #bankerWin img + label{right:16px;} */
+    #bankerWin img + label {    right: 20%; top: 34%;}
+    #imagedivBanker img{margin-right: 13px;}
+    #imagedivPlayer img:last-child{margin-right:5px;}
+    #imagedivBanker img:nth-child(3){bottom: 1%;left:-11%;margin-right:0px;}
+    #imagedivPlayer img{ margin-left: 5px;margin-right: 0px;}
+    #imagedivPlayer img:nth-child(3) {bottom: 1%;right: -2%;}
+    .ok-notok-right-left a i{padding: 6px 25px;}
+    #imagedivPlayer img{width:31%;}
+    #imagedivBanker img{width:30%;}
+    #imagedivBanker{position: relative;top:1%;right: 17%;}
+    #imagedivPlayer{position:relative;left: 17%;bottom: -1%;}
+    .score p span{font-size: 25px;}
+    .bet-box-bottom2 h3{padding:6px 0px;}
+    .bet-box-bottom1 h3{padding: 6px 0px;}
+    .bet-box-bottom3 h3{padding: 6px 0px;}
+    .bet-table-wood{bottom:35%;}
+    .betPlaced label, .betPlacedTie label, .betPlacedP_Pair label, .betPlacedB_Pair label, .betPlacedBanker label{top:-41px;/* display: -webkit-inline-box; */}
+    .betPlaced img, .betPlacedTie img, .betPlacedP_Pair img, .betPlacedB_Pair img, .betPlacedBanker img{margin:12px auto;}
+    #tiediv img + label {top: 35%;right: 66%;}
+.best-coin-section1 span{position: absolute;top:3%;left: 9.5%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.best-coin-section2 span{position: absolute;top:3%;left: 24%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.best-coin-section3 span{position: absolute;top:3%;left: 37%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.best-coin-section4 span{position: absolute;top:3%;left: 52%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.best-coin-section5 span{position: absolute;top:3%;left: 67%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.best-coin-section7 span{position: absolute;top:3%;left: 81%;font-weight: 600;font-size: 11px;padding: 0px 2px;}
+.bet_chips .chips3dSelect-in li {width: 7.34648vmax;height: 7.44678vmax;margin-right: 0.5997vmax;}
+#tiediv img{top:5px;right:21px;}
+.open_card-show dd{margin-bottom:20.46667vw;}
+#tieWin{top:-12%;}
+#tieWin img{width:60px;}
+#tieWin img + label{top:20px;}
+.open_card-show dt{top:12vw;}
+#playerBg{font-size: 4.53333vw;font-weight:bold;}
+#bankerBg{font-size: 4.53333vw;font-weight:bold;}
+.icon-text{padding:3px 1px;}
+.bet-coin-section{height:74px;}
+}

@@ -1,0 +1,460 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-collapse: collapse; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000; }
+
+
+a {
+  text-decoration: none;
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur()); }
+
+li {
+  list-style: none; }
+
+.clearfix:after, .info dl:after, .info ul ol:after, .history .road_set:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.clearfix, .info dl, .info ul ol, .history .road_set {
+  zoom: 1; }
+
+.clear {
+  clear: both; }
+
+.float-L, .tool_btn, .limit_view, .history .small_road,.small_road1, .history .cockroch_road {
+  float: left; }
+
+.float-R {
+  float: right; }
+
+.align-L {
+  text-align: left; }
+
+.align-R {
+  text-align: right; }
+
+.align-C, .maintenance p, .one_table_chips ul .money, .many_one_table_chips ul .money, .one_table_chips ul.add .old_money, .many_one_table_chips ul.add .old_money, .history .change_mode li p, .history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road p, .history .bigeye_road .banker, .history .small_road .banker, .history .small_road1 .banker, .history .bigeye_road .player, .history .small_road .player, .history .small_road1 .player, .info ul li, .info dl dd {
+  text-align: center; }
+
+.scroll_bar span, .one_table_chips ul .check_btn, .many_one_table_chips ul .check_btn, .one_table_chips ul li, .many_one_table_chips ul li, .one_table_chips ul div, .many_one_table_chips ul div, .desk_sound_on, .desk_sound_off, .desk_refresh, .change_line, .history .road_basic .pair_banker, .history .bead_road .pair_banker, .history .big_road .pair_banker, .history .bigeye_road .pair_banker, .history .small_road .pair_banker, .history .small_road1 .pair_banker, .history .cockroch_road .pair_banker, .history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player, .history .small_road1 .pair_player, .history .cockroch_road .pair_player, .history .big_road .banker, .history .big_road .player, .history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down, .history .bigeye_road .banker, .history .small_road .banker, .history .small_road1 .banker,.history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie,  .history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie, .history .bead_road .small_road1 .tie, .history .bigeye_road .player, .history .small_road .player, .history .small_road1 .player, .history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .player, .history .go_left, .history .go_right {
+  font-size: 0;
+  text-indent: -99999px; }
+
+.info dl, .info ul ol {
+  display: block; }
+.info dl li, .info ul ol li, .info dl dt, .info ul ol dt, .info dl dd, .info dl dd, .info ul ol dd {
+  display: block;
+  float: left; }
+
+
+
+.history_frame {
+  width: calc(100% - 45px);
+  height: 155px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: none; }
+
+.history {
+  background: #fff;
+  display: flex;
+  /****bead_road****/
+  /****bead_road end****/
+  /****big_road****/
+  /****big_road end****/
+  /****bigeye_road****/
+  /****bigeye_road end****/
+  /****small_road****/
+  /****small_road end****/
+  /****cockroch_road****/
+  /****cockroch_road end****/ }
+.history .change_mode {
+  flex: 0.172;
+  height: 100%;
+  background: #DBDBDB; }
+.history .change_mode li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #676767;
+  cursor: pointer; }
+.history .change_mode li.now {
+  background: #293930;
+  box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.5);
+  color: #FFD215; }
+.history .road_all {
+  display: flex;
+  flex: 1; }
+.history .road_con {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+.history table {
+  table-layout: fixed; }
+.history td {
+  width: 25px;
+  height: 25px;
+  border-right: 1px #E6E6E6 solid;
+  border-bottom: 1px #E6E6E6 solid;
+  padding: 1px;
+  position: relative; }
+.history td.good_banker {
+  background: #B80909; }
+.history td.good_banker p {
+  color: #fff; }
+.history td.good_banker .banker, .history td.good_banker .bead_road .player, .history .bead_road td.good_banker .player, .history td.good_banker .bead_road .tie, .history .bead_road td.good_banker .tie, .history td.good_banker .bead_road .big_road .tie_top, .history .bead_road .big_road td.good_banker .tie_top, .history td.good_banker .big_road .bead_road .tie_top, .history .big_road .bead_road td.good_banker .tie_top, .history td.good_banker .bead_road .big_road .tie_down, .history .bead_road .big_road td.good_banker .tie_down, .history td.good_banker .big_road .bead_road .tie_down, .history .big_road .bead_road td.good_banker .tie_down, .history td.good_banker .big_road .player, .history .big_road td.good_banker .player, .history td.good_banker .bigeye_road .player, .history .bigeye_road td.good_banker .player, .history td.good_banker .small_road .player,  .history td.good_banker .small_road1 .player, .history .small_road td.good_banker .player, .history .small_road1 td.good_banker .player, .history td.good_banker .cockroch_road .player, .history .cockroch_road td.good_banker .player, .history td.good_banker .player {
+  border: 2px #fff solid !important; }
+.history td.good_player {
+  background: #216BB0; }
+.history td.good_player p {
+  color: #fff; }
+.history td.good_player .banker, .history td.good_player .bead_road .player, .history .bead_road td.good_player .player, .history td.good_player .bead_road .tie, .history .bead_road td.good_player .tie, .history td.good_player .bead_road .big_road .tie_top, .history .bead_road .big_road td.good_player .tie_top, .history td.good_player .big_road .bead_road .tie_top, .history .big_road .bead_road td.good_player .tie_top, .history td.good_player .bead_road .big_road .tie_down, .history .bead_road .big_road td.good_player .tie_down, .history td.good_player .big_road .bead_road .tie_down, .history .big_road .bead_road td.good_player .tie_down, .history td.good_player .big_road .player, .history .big_road td.good_player .player, .history td.good_player .bigeye_road .player, .history .bigeye_road td.good_player .player, .history td.good_player .small_road .player, .history td.good_player .small_road1 .player, .history .small_road td.good_player .player, .history .small_road1 td.good_player .player, .history td.good_player .cockroch_road .player, .history .cockroch_road td.good_player .player, .history td.good_player .player {
+  border: 2px #fff solid !important; }
+.history .road_basic, .history .bead_road, .history .big_road, .history .bigeye_road, .history .small_road, .history .small_road1, .history .cockroch_road {
+  flex: 1;
+  border-right: 1px #707070 solid;
+  overflow: hidden;
+  position: relative; }
+.history .road_basic:hover .go_left, .history .bead_road:hover .go_left, .history .big_road:hover .go_left, .history .bigeye_road:hover .go_left, .history .small_road:hover .go_left,  .history .small_road1:hover .go_left, .history .cockroch_road:hover .go_left, .history .road_basic:hover .go_right, .history .bead_road:hover .go_right, .history .big_road:hover .go_right, .history .bigeye_road:hover .go_right, .history .small_road:hover .go_right, .history .small_road1:hover .go_right, .history .cockroch_road:hover .go_right, .history .road_basic:hover .go_right, .history .bead_road:hover .go_right, .history .big_road:hover .go_right, .history .bigeye_road:hover .go_right, .history .small_road:hover .go_right,.history .small_road1:hover .go_right, .history .cockroch_road:hover .go_right {
+  opacity: 1; }
+.history .road_basic:not(:hover) .go_left, .history .bead_road:not(:hover) .go_left, .history .big_road:not(:hover) .go_left, .history .bigeye_road:not(:hover) .go_left, .history .small_road:not(:hover) .go_left, .history .small_road1:not(:hover) .go_left, .history .cockroch_road:not(:hover) .go_left, .history .road_basic:not(:hover) .go_right, .history .bead_road:not(:hover) .go_right, .history .big_road:not(:hover) .go_right, .history .bigeye_road:not(:hover) .go_right, .history .small_road:not(:hover) .go_right, .history .small_road1:not(:hover) .go_right, .history .cockroch_road:not(:hover) .go_right, .history .road_basic:not(:hover) .go_right, .history .bead_road:not(:hover) .go_right, .history .big_road:not(:hover) .go_right, .history .bigeye_road:not(:hover) .go_right, .history .small_road:not(:hover) .go_right, .history .small_road1:not(:hover) .go_right, .history .cockroch_road:not(:hover) .go_right {
+  opacity: 0; }
+.history .road_basic .road_con, .history .bead_road .road_con, .history .big_road .road_con, .history .bigeye_road .road_con, .history .small_road .road_con, .history .small_road1 .road_con, .history .cockroch_road .road_con {
+  width: 4000px; }
+.history .road_basic .pair_banker, .history .bead_road .pair_banker, .history .big_road .pair_banker, .history .bigeye_road .pair_banker, .history .small_road .pair_banker, .history .small_road1 .pair_banker, .history .cockroch_road .pair_banker, .history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player,  .history .small_road1 .pair_player, .history .cockroch_road .pair_player {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background: #B80909;
+  border-radius: 100px;
+  border: 1px #fff solid;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+.history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player,  .history .small_road1 .pair_player, .history .cockroch_road .pair_player {
+  background: #216BB0;
+  top: inherit;
+  left: inherit;
+  right: 0px;
+  bottom: 0px; }
+.history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  background: #B80909;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 17px; }
+.history .bead_road .banker.ask, .history .bead_road .ask.player, .history .bead_road .ask.tie, .history .bead_road .big_road .ask.tie_top, .history .big_road .bead_road .ask.tie_top, .history .bead_road .big_road .ask.tie_down, .history .big_road .bead_road .ask.tie_down {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .bead_road .player {
+  background: #216BB0; }
+.history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
+  background: #80B632; }
+.history .big_road .banker, .history .big_road .bead_road .tie, .history .bead_road .big_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road .player {
+  width: 23px;
+  height: 23px;
+  border: 2px #B80909 solid;
+  border-radius: 100px;
+  background: none; }
+.history .big_road .banker.ask, .history .big_road .bead_road .ask.tie, .history .bead_road .big_road .ask.tie, .history .bead_road .big_road .ask.tie_top, .history .big_road .bead_road .ask.tie_top, .history .bead_road .big_road .ask.tie_down, .history .big_road .bead_road .ask.tie_down, .history .big_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .big_road .player {
+  border: 2px #216BB0 solid; }
+.history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down {
+  width: 100%;
+  height: 4px;
+  background: #80B632;
+  border: 1px #fff solid;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(100% - 15px);
+  left: 0px;
+  z-index: 8;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4); }
+.history .big_road .tie_top, .history .big_road .tie_down {
+  width: 73%;
+  top: 5px;
+  left: -2px; }
+.history .big_road .tie_down {
+  top: inherit;
+  left: inherit;
+  bottom: 5px;
+  right: -2px; }
+.history .big_road p {
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  color: #538c02;
+  font-size: 13px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 15; }
+.history .road_set {
+  flex: 0.93;
+  border-right: 1px #707070 solid; }
+.history .bigeye_road, .history .small_road ,.history .small_road1{
+  width: 100%;
+  height: 78px;
+  border-right: none;
+  border-bottom: 1px #707070 solid; }
+.history .bigeye_road .road_con, .history .small_road .road_con , .history .small_road1 .road_con{
+  width: 1820px; }
+.history .bigeye_road td, .history .small_road td,.history .small_road1 td {
+  width: 12px;
+  height: 12px; }
+.history .bigeye_road .banker, .history .small_road .banker, .history .small_road1 .banker, .history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie, .history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie, .history .bead_road .small_road1 .tie,.history .bigeye_road .bead_road .big_road .tie_top, .history .bead_road .big_road .bigeye_road .tie_top, .history .small_road .bead_road .big_road .tie_top, .history .small_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .bead_road .big_road .small_road1 .tie_top, .history .bigeye_road .big_road .bead_road .tie_top, .history .big_road .bead_road .bigeye_road .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .small_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .big_road .bead_road .small_road1 .tie_top, .history .bigeye_road .bead_road .big_road .tie_down, .history .bead_road .big_road .bigeye_road .tie_down, .history .small_road .bead_road .big_road .tie_down, .history .small_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down,.history .bead_road .big_road .small_road1 .tie_down, .history .bigeye_road .big_road .bead_road .tie_down, .history .big_road .bead_road .bigeye_road .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .small_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .big_road .bead_road .small_road1 .tie_down, .history .bigeye_road .player, .history .small_road .player,.history .small_road1 .player {
+  width: 10px;
+  height: 10px;
+  background: #B80909;
+  border-radius: 100px; }
+.history .bigeye_road .banker.ask, .history .small_road .banker.ask, .history .small_road1 .banker.ask, .history .bigeye_road .bead_road .ask.tie, .history .bead_road .bigeye_road .ask.tie, .history .small_road .bead_road .ask.tie, .history .small_road1 .bead_road .ask.tie, .history .bead_road .small_road .ask.tie,.history .bead_road .small_road1 .ask.tie, .history .bigeye_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .bigeye_road .ask.tie_top, .history .small_road .bead_road .big_road .ask.tie_top,.history .bead_road .small_road1 .ask.tie, .history .bead_road .big_road .small_road .ask.tie_top,.history .bead_road .big_road .small_road1 .ask.tie_top, .history .bigeye_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .bigeye_road .ask.tie_top, .history .small_road .big_road .bead_road .ask.tie_top,.history .small_road1 .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .small_road .ask.tie_top,.history .big_road .bead_road .small_road1 .ask.tie_top, .history .bigeye_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .bigeye_road .ask.tie_down, .history .small_road .bead_road .big_road .ask.tie_down,.history .small_road1 .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .small_road .ask.tie_down, .history .bead_road .big_road .small_road1 .ask.tie_down, .history .bigeye_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .bigeye_road .ask.tie_down, .history .small_road .big_road .bead_road .ask.tie_down, .history .small_road1 .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .small_road .ask.tie_down, .history .big_road .bead_road .small_road1 .ask.tie_down, .history .bigeye_road .ask.player, .history .small_road .ask.player,.history .small_road1 .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .bigeye_road .player, .history .small_road .player,.history .small_road1 .player {
+  background: #216BB0; }
+.history .small_road,.history .small_road1 {
+  width: 50%;
+  height: 77px;
+  border-right: 1px #707070 solid;
+  border-bottom: none; }
+.history .small_road .banker,.history .small_road1 .banker, .history .small_road .bead_road .tie,.history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie,.history .bead_road .small_road1 .tie, .history .small_road .bead_road .big_road .tie_top, .history .small_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .bead_road .big_road .small_road1 .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .small_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top,.history .big_road .bead_road .small_road1 .tie_top, .history .small_road .bead_road .big_road .tie_down, .history .small_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bead_road .big_road .small_road1 .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .small_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .big_road .bead_road .small_road1 .tie_down, .history .small_road .player,.history .small_road1 .player {
+  width: 10px;
+  height: 10px;
+  border: 2px #B80909 solid;
+  border-radius: 100px;
+  background: none; }
+.history .small_road .banker.ask,.history .small_road1 .banker.ask, .history .small_road .bead_road .ask.tie,.history .small_road1 .bead_road .ask.tie, .history .bead_road .small_road .ask.tie,.history .bead_road .small_road1 .ask.tie, .history .small_road .bead_road .big_road .ask.tie_top, .history .small_road1 .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .small_road .ask.tie_top, .history .bead_road .big_road .small_road1 .ask.tie_top, .history .small_road .big_road .bead_road .ask.tie_top,.history .small_road1 .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .small_road .ask.tie_top,.history .big_road .bead_road .small_road1 .ask.tie_top, .history .small_road .bead_road .big_road .ask.tie_down,.history .small_road1 .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .small_road .ask.tie_down, .history .bead_road .big_road .small_road1 .ask.tie_down, .history .small_road .big_road .bead_road .ask.tie_down, .history .small_road1 .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .small_road .ask.tie_down, .history .big_road .bead_road .small_road1 .ask.tie_down, .history .small_road .ask.player,.history .small_road1 .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .small_road .player,.history .small_road1 .player {
+  border: 2px #216BB0 solid; }
+.history .cockroch_road {
+  width: 50%;
+  height: 77px;
+  border-bottom: none;
+  border-right: none; }
+.history .cockroch_road .road_con {
+  width: 1820px; }
+.history .cockroch_road td {
+  width: 12px;
+  height: 12px; }
+.history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .bead_road .big_road .tie_top, .history .bead_road .big_road .cockroch_road .tie_top, .history .cockroch_road .big_road .bead_road .tie_top, .history .big_road .bead_road .cockroch_road .tie_top, .history .cockroch_road .bead_road .big_road .tie_down, .history .bead_road .big_road .cockroch_road .tie_down, .history .cockroch_road .big_road .bead_road .tie_down, .history .big_road .bead_road .cockroch_road .tie_down, .history .cockroch_road .player {
+  width: 100%;
+  height: 2px;
+  background: #B80909;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: calc(100% - 7px);
+  left: 0px;
+  z-index: 8; }
+.history .cockroch_road .banker.ask, .history .cockroch_road .bead_road .ask.tie, .history .bead_road .cockroch_road .ask.tie, .history .cockroch_road .bead_road .big_road .ask.tie_top, .history .bead_road .big_road .cockroch_road .ask.tie_top, .history .cockroch_road .big_road .bead_road .ask.tie_top, .history .big_road .bead_road .cockroch_road .ask.tie_top, .history .cockroch_road .bead_road .big_road .ask.tie_down, .history .bead_road .big_road .cockroch_road .ask.tie_down, .history .cockroch_road .big_road .bead_road .ask.tie_down, .history .big_road .bead_road .cockroch_road .ask.tie_down, .history .cockroch_road .ask.player {
+  -webkit-animation: twinkling2 1s infinite ease-in-out;
+  -moz-animation: twinkling2 1s infinite ease-in-out;
+  -ms-animation: twinkling2 1s infinite ease-in-out;
+  animation: twinkling2 1s infinite ease-in-out; }
+.history .cockroch_road .player {
+  background: #216BB0; }
+.history .go_left, .history .go_right {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: calc(50% - 17px);
+  left: 5px;
+  z-index: 100;
+  cursor: pointer;
+  background: url(../images/icon_arrow_L.png) center center no-repeat, rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0; }
+.history .go_right {
+  left: inherit;
+  right: 5px;
+  background: url(../images/icon_arrow_R.png) center center no-repeat, rgba(255, 255, 255, 0.8); }
+
+/****info****/
+.info {
+  flex: 0.3;
+  padding: 5px;
+  display: flex; }
+.info ul {
+  flex: none;
+  width: 65px;
+  margin-right: 3px; }
+.info ul li {
+  border: 1px solid #BDBDBD;
+  cursor: pointer;
+  font-size: 13px; }
+.info ul li:first-child {
+  margin-bottom: 5px; }
+.info ul .ask_banker {
+  color: #B80909; }
+.info ul .ask_banker:hover, .info ul .ask_banker.select {
+  border: 1px #B80909 solid; }
+.info ul .ask_player {
+  color: #216BB0; }
+.info ul .ask_player:hover, .info ul .ask_player.select {
+  border: 1px #216BB0 solid; }
+.info dl {
+  flex: auto;
+  font-size: 15px;
+  color: #4B4B4B;
+  border-right: 1px #E5E5E5 solid;
+  padding: 5px 0; }
+.info dl:last-child {
+  border: none; }
+.info dl dt, .info dl dd {
+  width: 70%;
+  height: 33px;
+  padding: 6px 0 0 10px; }
+.info dl dd {
+  width: 30%;
+  height: 33px;
+  padding-top: 6px; }
+.info dl .banker, .info dl .history .bead_road .player, .history .bead_road .info dl .player, .info dl .history .bead_road .tie, .history .bead_road .info dl .tie, .info dl .history .bead_road .big_road .tie_top, .history .bead_road .big_road .info dl .tie_top, .info dl .history .big_road .bead_road .tie_top, .history .big_road .bead_road .info dl .tie_top, .info dl .history .bead_road .big_road .tie_down, .history .bead_road .big_road .info dl .tie_down, .info dl .history .big_road .bead_road .tie_down, .history .big_road .bead_road .info dl .tie_down, .info dl .history .big_road .player, .history .big_road .info dl .player, .info dl .history .bigeye_road .player, .history .bigeye_road .info dl .player, .info dl .history .small_road .player, .info dl .history .small_road1 .player, .history .small_road .info dl .player, .history .small_road1 .info dl .player, .info dl .history .cockroch_road .player, .history .cockroch_road .info dl .player {
+  color: #B80909; }
+.info dl .player {
+  color: #216BB0; }
+.info dl .tie, .info dl .history .big_road .tie_top, .history .big_road .info dl .tie_top, .info dl .history .big_road .tie_down, .history .big_road .info dl .tie_down {
+  color: #80B632; }
+.info dl .other {
+  color: #9D926E; }
+
+/****info end****/
+.ins_mode.history .big_road, .ins_mode .history .big_road {
+  background: url(../images/icon_ins_bg.svg) center center/auto 80% no-repeat #fff !important; }
+
+.history_frame {
+  height: 120px;
+  position: fixed; }
+
+.history {
+  height: 120px; }
+.history td {
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  line-height: 15px; }
+.history .bead_road {
+  flex: 0.3; }
+.history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 13px; }
+.history .big_road .banker, .history .big_road .bead_road .tie, .history .bead_road .big_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road .player {
+  width: 17px;
+  height: 17px;
+  ine-height: 17px; }
+.history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down {
+  top: calc(100% - 13px); }
+.history .big_road .tie_top, .history .big_road .tie_down {
+  top: 3px; }
+.history .big_road .tie_down {
+  top: inherit;
+  bottom: 3px; }
+.history .big_road p {
+  line-height: 20px; }
+.history .bigeye_road, .history .small_road,.history .small_road1 {
+  height: 40px; }
+.history .bigeye_road td, .history .small_road td,.history .small_road1 td {
+  width: 10px;
+  height: 10px; }
+.history .bigeye_road .banker, .history .small_road .banker,.history .small_road1 .banker, .history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie, .history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie, .history .bead_road .small_road1 .tie, .history .bigeye_road .bead_road .big_road .tie_top, .history .bead_road .big_road .bigeye_road .tie_top, .history .small_road .bead_road .big_road .tie_top, .history .small_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top,.history .bead_road .big_road .small_road1 .tie_top, .history .bigeye_road .big_road .bead_road .tie_top, .history .big_road .bead_road .bigeye_road .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .small_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .big_road .bead_road .small_road1 .tie_top, .history .bigeye_road .bead_road .big_road .tie_down, .history .bead_road .big_road .bigeye_road .tie_down, .history .small_road .bead_road .big_road .tie_down, .history .small_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bead_road .big_road .small_road1 .tie_down, .history .bigeye_road .big_road .bead_road .tie_down, .history .big_road .bead_road .bigeye_road .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .small_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .big_road .bead_road .small_road1 .tie_down, .history .bigeye_road .player, .history .small_road .player,.history .small_road1 .player {
+  width: 7px;
+  height: 7px; }
+.history .small_road .banker, .history .small_road1 .banker, .history .small_road .bead_road .tie,.history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie, .history .bead_road .small_road1 .tie, .history .small_road .bead_road .big_road .tie_top, .history .small_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .bead_road .big_road .small_road1 .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .small_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .big_road .bead_road .small_road1 .tie_top, .history .small_road .bead_road .big_road .tie_down, .history .small_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bead_road .big_road .small_road1 .tie_down, .history .small_road .big_road .bead_road .tie_down,  .history .small_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .big_road .bead_road .small_road1 .tie_down, .history .small_road .player,.history .small_road1 .player {
+  width: 7px;
+  height: 7px; }
+.history .cockroch_road {
+  height:40px; }
+.history .cockroch_road td {
+  width: 10px;
+  height: 10px; }
+.history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .bead_road .big_road .tie_top, .history .bead_road .big_road .cockroch_road .tie_top, .history .cockroch_road .big_road .bead_road .tie_top, .history .big_road .bead_road .cockroch_road .tie_top, .history .cockroch_road .bead_road .big_road .tie_down, .history .bead_road .big_road .cockroch_road .tie_down, .history .cockroch_road .big_road .bead_road .tie_down, .history .big_road .bead_road .cockroch_road .tie_down, .history .cockroch_road .player {
+  top: calc(100% - 6px); }
+
+.info {
+  padding: 3px; }
+.info ul li {
+  height: 54px;
+  padding: 0 5px; }
+.info ul p {
+  display: flex;
+  width: 100%;
+  height: 32px;
+  justify-content: center;
+  align-items: center; }
+.info ul ol {
+  margin-top: 3px;
+  display: flex;
+  justify-content: center; }
+.info ul ol li {
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border: none;
+  margin-right: 2px;
+  padding: 0; }
+.info ul ol li:last-child {
+  margin-right: none; }
+.info ul ol .circle {
+  border-radius: 100px; }
+.info ul ol .circle.banker, .info ul ol .history .bead_road .circle.player, .history .bead_road .info ul ol .circle.player, .info ul ol .history .bead_road .circle.tie, .history .bead_road .info ul ol .circle.tie, .info ul ol .history .bead_road .big_road .circle.tie_top, .history .bead_road .big_road .info ul ol .circle.tie_top, .info ul ol .history .big_road .bead_road .circle.tie_top, .history .big_road .bead_road .info ul ol .circle.tie_top, .info ul ol .history .bead_road .big_road .circle.tie_down, .history .bead_road .big_road .info ul ol .circle.tie_down, .info ul ol .history .big_road .bead_road .circle.tie_down, .history .big_road .bead_road .info ul ol .circle.tie_down, .info ul ol .history .big_road .circle.player, .history .big_road .info ul ol .circle.player, .info ul ol .history .bigeye_road .circle.player, .history .bigeye_road .info ul ol .circle.player, .info ul ol .history .small_road .circle.player, .info ul ol .history .small_road1 .circle.player, .history .small_road .info ul ol .circle.player, .history .small_road1 .info ul ol .circle.player, .info ul ol .history .cockroch_road .circle.player, .history .cockroch_road .info ul ol .circle.player {
+  background: #B8090B; }
+.info ul ol .circle.player {
+  background: #216BB0; }
+.info ul ol .hollow_circle {
+  border-radius: 200px;
+  background: none;
+  border: 2px #000 solid; }
+.info ul ol .hollow_circle.banker, .info ul ol .history .bead_road .hollow_circle.player, .history .bead_road .info ul ol .hollow_circle.player, .info ul ol .history .bead_road .hollow_circle.tie, .history .bead_road .info ul ol .hollow_circle.tie, .info ul ol .history .bead_road .big_road .hollow_circle.tie_top, .history .bead_road .big_road .info ul ol .hollow_circle.tie_top, .info ul ol .history .big_road .bead_road .hollow_circle.tie_top, .history .big_road .bead_road .info ul ol .hollow_circle.tie_top, .info ul ol .history .bead_road .big_road .hollow_circle.tie_down, .history .bead_road .big_road .info ul ol .hollow_circle.tie_down, .info ul ol .history .big_road .bead_road .hollow_circle.tie_down, .history .big_road .bead_road .info ul ol .hollow_circle.tie_down, .info ul ol .history .big_road .hollow_circle.player, .history .big_road .info ul ol .hollow_circle.player, .info ul ol .history .bigeye_road .hollow_circle.player, .history .bigeye_road .info ul ol .hollow_circle.player, .info ul ol .history .small_road .hollow_circle.player, .info ul ol .history .small_road1 .hollow_circle.player, .history .small_road .info ul ol .hollow_circle.player, .history .small_road1 .info ul ol .hollow_circle.player, .info ul ol .history .cockroch_road .hollow_circle.player, .history .cockroch_road .info ul ol .hollow_circle.player {
+  border-color: #B8090B; }
+.info ul ol .hollow_circle.player {
+  border-color: #216BB0; }
+.info ul ol .slash {
+  width: 3px;
+  transform: rotate(40deg);
+  margin-left: 3px; }
+.info ul ol .slash.banker, .info ul ol .history .bead_road .slash.player, .history .bead_road .info ul ol .slash.player, .info ul ol .history .bead_road .slash.tie, .history .bead_road .info ul ol .slash.tie, .info ul ol .history .bead_road .big_road .slash.tie_top, .history .bead_road .big_road .info ul ol .slash.tie_top, .info ul ol .history .big_road .bead_road .slash.tie_top, .history .big_road .bead_road .info ul ol .slash.tie_top, .info ul ol .history .bead_road .big_road .slash.tie_down, .history .bead_road .big_road .info ul ol .slash.tie_down, .info ul ol .history .big_road .bead_road .slash.tie_down, .history .big_road .bead_road .info ul ol .slash.tie_down, .info ul ol .history .big_road .slash.player, .history .big_road .info ul ol .slash.player, .info ul ol .history .bigeye_road .slash.player, .history .bigeye_road .info ul ol .slash.player, .info ul ol .history .small_road .slash.player, .info ul ol .history .small_road1 .slash.player,  .history .small_road .info ul ol .slash.player, .history .small_road1 .info ul ol .slash.player, .info ul ol .history .cockroch_road .slash.player, .history .cockroch_road .info ul ol .slash.player {
+  background: #B8090B; }
+.info ul ol .slash.player {
+  background: #216BB0; }
+.info ul ol .none {
+  background: none; }
+.info dl dt, .info dl dd {
+  height: 21px;
+  line-height: 21px;
+  font-size: 13px;
+  padding: 0 0 0 10px; }
+.info dl dd {
+  padding: 0; }
+

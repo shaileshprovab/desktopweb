@@ -1,0 +1,356 @@
+
+
+
+
+
+
+.scroll_bar span, .one_table_chips ul .check_btn, .many_one_table_chips ul .check_btn, .quick_bet .bet_zone ol ul .check_btn, .table_list_open .bet_zone ol ul .check_btn, .one_table_chips ul li, .many_one_table_chips ul li, .quick_bet .bet_zone ol ul li, .table_list_open .bet_zone ol ul li, .one_table_chips ul div, .many_one_table_chips ul div, .quick_bet .bet_zone ol ul div, .table_list_open .bet_zone ol ul div, .desk_sound_on, .desk_sound_off, .desk_refresh, .change_line, .game_info_box h3 a, .ins_bet h3 a, .ins_bet .total_bet dd .cancel, .history .road_basic .pair_banker, .history .bead_road .pair_banker, .history .big_road .pair_banker, .history .bigeye_road .pair_banker, .history .small_road .pair_banker, .history .cockroch_road .pair_banker, .history .road_basic .pair_player, .history .bead_road .pair_player, .history .big_road .pair_player, .history .bigeye_road .pair_player, .history .small_road .pair_player, .history .cockroch_road .pair_player, .history .big_road .banker, .history .big_road .bead_road .tie, .history .bead_road .big_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down, .history .big_road .player, .history .big_road .tie, .history .big_road .tie_top, .history .big_road .tie_down, .history .bigeye_road .banker, .history .small_road .banker, .history .bigeye_road .bead_road .tie, .history .bead_road .bigeye_road .tie, .history .small_road .bead_road .tie, .history .bead_road .small_road .tie, .history .bigeye_road .bead_road .big_road .tie_top, .history .bead_road .big_road .bigeye_road .tie_top, .history .small_road .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top, .history .bigeye_road .big_road .bead_road .tie_top, .history .big_road .bead_road .bigeye_road .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .bigeye_road .bead_road .big_road .tie_down, .history .bead_road .big_road .bigeye_road .tie_down, .history .small_road .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bigeye_road .big_road .bead_road .tie_down, .history .big_road .bead_road .bigeye_road .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .bigeye_road .player, .history .small_road .player, .history .cockroch_road .banker, .history .cockroch_road .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .cockroch_road .bead_road .big_road .tie_top, .history .bead_road .big_road .cockroch_road .tie_top, .history .cockroch_road .big_road .bead_road .tie_top, .history .big_road .bead_road .cockroch_road .tie_top, .history .cockroch_road .bead_road .big_road .tie_down, .history .bead_road .big_road .cockroch_road .tie_down, .history .cockroch_road .big_road .bead_road .tie_down, .history .big_road .bead_road .cockroch_road .tie_down, .history .cockroch_road .player, .history .go_left, .history .go_right, .table_list_close .history .table_info li:last-child span, .table_list_open .history .table_info li:last-child span, .quick_bet h5 .close, .table_list_open h5 .close, .table_list_close ul .open, .table_list_close ul .icon, .table_list_close ul .good .good_tip_banker dt p, .table_list_close ul .good .good_tip_player dt p, .table_list_close ul .good .good_tip_normal dt p, .table_list_close ul .good .good_tip_banker .info dl dd p, .info dl .table_list_close ul .good .good_tip_banker dd p, .table_list_close ul .good .good_tip_player .info dl dd p, .info dl .table_list_close ul .good .good_tip_player dd p, .table_list_close ul .good .good_tip_normal .info dl dd p, .info dl .table_list_close ul .good .good_tip_normal dd p, .table_list_close ul .good .good_tip_banker.open_bet h5, .table_list_close ul .good .open_bet.good_tip_player h5, .table_list_close ul .good .open_bet.good_tip_normal h5, .table_list_open h4 a, .table_list_open dd span, .table_list_open dd li.close {
+  font-size: 0;
+  text-indent: -99999px;
+}
+
+
+
+.table_list_close .history .table_info, .table_list_open .history .table_info {
+  background: #EDEDED;
+  display: flex;
+}
+
+.table_list_close .history .table_info li, .table_list_open .history .table_info li {
+  flex: 1;
+  height: 30px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-bottom: none;
+}
+
+
+.table_list_close .history .table_info li:last-child span, .table_list_open .history .table_info li:last-child span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 100px;
+  background: #444;
+  margin: 0 4px 0 7px;
+}
+
+.table_list_close .history .table_info li:last-child span:first-child, .table_list_open .history .table_info li:last-child span:first-child {
+  background: #B80909;
+}
+
+.table_list_close .history .table_info li:last-child span:nth-child(3n), .table_list_open .history .table_info li:last-child span:nth-child(3n) {
+  background: #216BB0;
+}
+
+.table_list_close .history .table_info li:last-child span:nth-child(5n), .table_list_open .history .table_info li:last-child span:nth-child(5n) {
+  background: #80B632;
+}
+
+
+.table_list_open {
+  width:428px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+}
+
+.table_list_open .con {
+  height: 100%;
+  flex: 1;
+  background: #313131;
+  padding: 5px 8px;
+  overflow: hidden;
+  display: flex;
+}
+
+.table_list_open .list {
+  flex: 1;
+  padding: 0 10px 0 0;
+}
+
+.table_list_open h4 {
+  padding: 5px 5px;
+  color: #ffc200;
+  font-size: 15px;
+  font-weight: normal;
+  border-bottom: 1px #676767 solid;
+  margin-bottom: 10px;
+  position: relative;
+  clear: both;
+}
+
+.table_list_open h4 a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  background: url(../images/icon_close.png) center center no-repeat;
+}
+
+.table_list_open dl {
+  display: flex;
+  clear: both;
+  position: relative;
+}
+
+.table_list_open dt, .table_list_open .info dl dd, .info dl .table_list_open dd {
+  flex: 1.5;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 0px;
+  font-size: 15px;
+  color: #E7DEBB;
+  display: flex;
+}
+
+.table_list_open dt p, .table_list_open .info dl dd p, .info dl .table_list_open dd p {
+  display: inline;
+  font-size: 12px;
+  color: #DCDCDC;
+  padding-left: 10px;
+}
+
+.table_list_open dt.speed_mode span, .table_list_open .info dl dd.speed_mode span, .info dl .table_list_open dd.speed_mode span {
+  font-size: 15px;
+  color: #EA2204;
+  padding-left: 0px;
+  padding-right: 7px;
+}
+
+.table_list_open dd {
+  height: 30px;
+  line-height: 30px;
+  padding-right: 5px;
+  padding-left: 17px;
+  font-size: 12px;
+  color: #DCDCDC;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: url(../../images/player/icon_limit_s2.png) left center no-repeat;
+  cursor: pointer;
+}
+
+.table_list_open dd:hover {
+  color: #fff;
+}
+
+.table_list_open dd.off ul {
+  display: none;
+}
+
+.table_list_open dd.on ul {
+  display: block;
+}
+
+.table_list_open dd span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #d6d6d6 transparent transparent transparent;
+  margin-left: 7px;
+}
+
+.table_list_open dd ul {
+  position: absolute;
+  z-index: 400;
+  top: 30px;
+  right: 0px;
+  width: calc(100% - 50px);
+  height: 151px;
+  background: #1f1f1f;
+  padding: 3px;
+}
+
+.table_list_open dd li {
+  width: 49.3%;
+  height: 47px;
+  font-size: 13px;
+  color: #fff;
+  margin: 0px 2px 2px 0;
+  padding: 3px 10px;
+  background: #212121;
+  border: 1px #828282 solid;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.table_list_open dd li:hover {
+  background: #fdbb00;
+  color: #000;
+  border: 1px #000 solid;
+}
+
+.table_list_open dd li.close {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 6px;
+  right: 6px;
+  border: none;
+  padding: 0;
+  background: url(../images/icon_cancel_nowork2.png) center center no-repeat;
+}
+
+.table_list_open .table_set {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.table_list_open .table_set .game_info, .table_list_open .table_set .game_info_red {
+  width: 190px;
+  top: calc(50% - 5px/2 - 20px);
+  left: calc(50% - 190px/2);
+  background: rgba(23, 23, 23, 0.7);
+  color: #ffcc00;
+}
+
+.table_list_open .play_mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  width: calc(100% - 50px);
+  height: 151px;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.table_list_open .play_mask:hover p {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  border: 2px #ffc200 solid;
+  transition: all 0.15s ease-out;
+}
+
+.table_list_open .play_mask p {
+  width: 0px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0px;
+  color: #ffc300;
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 100px;
+}
+
+.table_list_open .play_mask p:hover {
+  width: 120px;
+  height: 120px;
+  border: 2px #000 solid;
+  background: rgba(255, 194, 0, 0.86);
+  color: #000;
+}
+
+.table_list_open .table_list_info {
+  width: 50px;
+  height: 151px;
+  padding-right: 2px;
+  float: left;
+}
+
+.table_list_open .table_list_info p {
+  width: 47px;
+  height: 57px;
+  background: linear-gradient(-179deg, #424242 0%, #1B1B1B 100%);
+  border: 1px solid #090909;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  color: #FFD215;
+  font-size: 25px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.table_list_open .table_list_info p span {
+  display: block;
+  color: #CDBD78;
+  font-size: 11px;
+  margin: 0 auto;
+}
+
+.table_list_open .table_list_info a {
+  width: 47px;
+  height: 90px;
+  background: linear-gradient(0deg, #F9A306 0%, #FFC300 100%);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1B1B1B;
+  font-size: 12px;
+  text-align: center;
+}
+
+.table_list_open .table_list_info a span {
+  display: block;
+  padding-top: 23px;
+  background: url(../../images/player/icon_quick_bet.png) center top no-repeat;
+}
+
+.table_list_open .table_list_info a:hover {
+  background: linear-gradient(0deg, #f96b06 0%, #ffce2f 100%);
+}
+
+.table_list_open .table_list_info a.on {
+  background: linear-gradient(-180deg, #F4E6B7 0%, #CBB881 99%);
+  cursor: default;
+}
+
+.table_list_open .table_list_info a.on span {
+  background: url(../../images/player/icon_arrow_close6.png) center top no-repeat;
+}
+
+.table_list_open .photo {
+  width: 101px;
+  float: left;
+}
+
+.table_list_open .photo img {
+  width: 100%;
+  height: auto;
+}
+
+.table_list_open .photo p {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #222;
+  color: #c7c7c7;
+  font-size: 14px;
+  text-align: center;
+}
+
+.table_list_open .history {
+  position: relative;
+  width: calc(100% - 152px);
+  display: block;
+  margin-left: 1px;
+  float: left;
+  height: 120px;
+}
+
+.table_list_open .history .road_basic:hover .go_left, .table_list_open .history .bead_road:hover .go_left, .table_list_open .history .big_road:hover .go_left, .table_list_open .history .bigeye_road:hover .go_left, .table_list_open .history .small_road:hover .go_left, .table_list_open .history .cockroch_road:hover .go_left, .table_list_open .history .road_basic:hover .go_right, .table_list_open .history .bead_road:hover .go_right, .table_list_open .history .big_road:hover .go_right, .table_list_open .history .bigeye_road:hover .go_right, .table_list_open .history .small_road:hover .go_right, .table_list_open .history .cockroch_road:hover .go_right, .table_list_open .history .road_basic:hover .go_right, .table_list_open .history .bead_road:hover .go_right, .table_list_open .history .big_road:hover .go_right, .table_list_open .history .bigeye_road:hover .go_right, .table_list_open .history .small_road:hover .go_right, .table_list_open .history .cockroch_road:hover .go_right {
+  display: none;
+}
+
+.table_list_open .history .big_road {
+  height: 121px;
+  border: 1px #FFFFFF solid;
+}
+.history td{width:31px;height: 31px;}
