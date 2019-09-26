@@ -253,7 +253,7 @@ $('#jsBigAllRoad').hide();
                 color = "";
               }
               console.log("Die Count First -- ", data.TieCount+" Color "+data.color);
-              var html = '<div class="tie_up" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
+              var html = '<div class="tie_up bigeye" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
                     <div class="'+pair_banker+'"></div>\
                     <div class="'+color+'" id="bigroadtie_'+data.MapX+'_'+data.MapY+'"></div>\
                     <div class="'+pair_player+'"></div>\
@@ -263,6 +263,7 @@ $('#jsBigAllRoad').hide();
                     <p>' + data.TieCount + '</p>\
                   </div>\
                 </div>'; */
+              $('#bigroad_'+data.MapX+'_'+data.MapY+' div').removeClass('bigeye');                
               $('#bigroad_'+data.MapX+'_'+data.MapY+' div').removeClass('tie');
               $('#bigroad_'+data.MapX+'_'+data.MapY).append(html);
             } else {
@@ -276,7 +277,7 @@ $('#jsBigAllRoad').hide();
           } else {
             //If the first bet is tie.
             if(!$('#' + attr).length) {
-              var html = '<div class="" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
+              var html = '<div class="bigeye" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
                     <div class="'+pair_banker+'"></div>\
                     <div class="'+data.color+'" id="bigroadtie_'+data.MapX+'_'+data.MapY+'"></div>\
                     <div class="'+pair_player+'"></div>\
@@ -338,7 +339,7 @@ $('#jsBigAllRoad').hide();
         //       <p>'+ natural +'</p>\
         //     </div>\
         //   </div>';
-        var html = '<div class="'+tie_up+'" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
+        var html = '<div class="'+tie_up+' bigeye" id="bigroadtieup_'+data.MapX+'_'+data.MapY+'"></div>\
                     <div class="'+pair_banker+'"></div>\
                     <div class="'+tie+'"></div>\
                     <div class="'+data.color+'" id="bigroadtie_'+data.MapX+'_'+data.MapY+'"></div>\
@@ -346,7 +347,14 @@ $('#jsBigAllRoad').hide();
                     <div class="'+tie_down+'" id="bigroadtiedown_'+data.MapX+'_'+data.MapY+'"></div>';
         $('#bigroad_'+data.MapX+'_'+data.MapY).append(html);
       }
-      
+      var bigeyeroadLength = $(".bigx_1 > td .bigeye").length;
+      if(bigeyeroadLength > 29){
+        var extraBigEyeLength = bigeyeroadLength - 29;
+        var leftBigEyeWidth = (extraBigEyeLength+1) * 15;
+
+        $("#bigeyeroad").css({ 'marginLeft':'-'+leftBigEyeWidth+'px' });
+      }
+
       this.updateBoardPosition('big');
     },
     updateBigEyeTable: function(data) {
