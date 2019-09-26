@@ -202,9 +202,9 @@ $('#jsBigAllRoad').hide();
     },
     updateBeadRoadTable: function(data) {
       // console.log("Update Bead Road Table-> ", data);
+      // console.log("BEAD-X length - "+ data.MapX+' BEAD-Y length - '+ data.MapY);
       var road_class_up = '';
       var road_class_down = '';
-
       if(data.BPair) {
         road_class_up += ' pair_banker';
       }
@@ -214,11 +214,19 @@ $('#jsBigAllRoad').hide();
       /*var html = '<div data-column="' + data.MapY + '" id="beadRoadAllRoadGrid_4_0" name="beadRoadAllRoadGrid_4" style="grid-area: ' + data.MapX + '/' + data.MapY + '" class="road-dot dot-' + data.color + ' ' + road_class + '">\
           <p>'+ data.Result +'</p>\
         </div>';*/
-      var html = '<div class="'+road_class_up+'"></div>\
+      var html = '<div class="'+road_class_up+' beadlength"></div>\
                                 <div class="'+road_class_down+'">\
                                 </div>\
                                 <div class="'+data.color+'" style="">'+ data.Result +'</div>';
       $('#beed_'+data.MapX+'_'+data.MapY).append(html);
+
+      var beadXLength = $(".x_1 > td .beadlength").length;
+      if(beadXLength > 4){
+        var extraLength = beadXLength - 4;
+        var leftWidth = (extraLength+1) * 31;
+
+        $("#beadRoad").css({ 'marginLeft':'-'+leftWidth+'px' });
+      }
       this.updateBoardPosition('bead');
     },
     updateBigRoadTable: function(data, id) {
@@ -517,6 +525,7 @@ $('#jsBigAllRoad').hide();
         url: SITE_URL + "/models/get_bigroad.php",
         type: 'get',
         dataType: 'json',
+        // headers: {  'Access-Control-Allow-Origin': '*' },
         success: function(data, textStatus, jqXHR) {
           console.log("Get Result For All Data---",data);
           if(data.status) {
