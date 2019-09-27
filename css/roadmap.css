@@ -358,14 +358,14 @@ li {
   position: fixed; }
 
 .history {
-  /* height: 120px;  */height:185px;}
+  /* height: 120px;  */height:215px;}
 .history td {
   width:25px;
   height:25px;
   font-size: 13px;
   line-height: 15px; }
 .history .bead_road {
-  flex: 0.16; }
+  flex: 0.5; }
 .history .bead_road .banker, .history .bead_road .player, .history .bead_road .tie, .history .bead_road .big_road .tie_top, .history .big_road .bead_road .tie_top, .history .bead_road .big_road .tie_down, .history .big_road .bead_road .tie_down {
       width: 25px;
     height: 25px;
@@ -385,10 +385,12 @@ li {
 .history .big_road p {
   line-height: 20px; }
 .history .big_road1,.history .bigeye_road1, .history .small_road,.history .small_road1 {
-  height:47px;border-bottom: 1px #707070 solid; }
+  height:61px;border-bottom: 1px #707070 solid; }
 .history .big_road1 td,.history .bigeye_road1 td, .history .small_road td,.history .small_road1 td {
-  width: 18px;
-  height: 18px; }
+  width: 10px;
+  height: 10px;
+  padding-left: 1px;
+  padding-bottom: 0.5px; }
 .history .big_road1 .banker,.history .bigeye_road1 .banker, .history .small_road .banker,.history .small_road1 .banker, .history .big_road1 .bead_road .tie,.history .bigeye_road1 .bead_road .tie, .history .bead_road .big_road1 .tie,.history .bead_road .bigeye_road1 .tie, .history .small_road .bead_road .tie, .history .small_road1 .bead_road .tie, .history .bead_road .small_road .tie, .history .bead_road .small_road1 .tie, .history .big_road1 .bead_road .big_road .tie_top,.history .bigeye_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .big_road1 .tie_top,.history .bead_road .big_road .bigeye_road1 .tie_top, .history .small_road .bead_road .big_road .tie_top, .history .small_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .small_road .tie_top,.history .bead_road .big_road .small_road1 .tie_top, .history .big_road1 .big_road .bead_road .tie_top,.history .bigeye_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .big_road1 .tie_top,.history .big_road .bead_road .bigeye_road1 .tie_top, .history .small_road .big_road .bead_road .tie_top, .history .small_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .small_road .tie_top, .history .big_road .bead_road .small_road1 .tie_top, .history .big_road1 .bead_road .big_road .tie_down,.history .bigeye_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .big_road1 .tie_down,.history .bead_road .big_road .bigeye_road1 .tie_down, .history .small_road .bead_road .big_road .tie_down, .history .small_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .small_road .tie_down, .history .bead_road .big_road .small_road1 .tie_down, .history .big_road1 .big_road .bead_road .tie_down,.history .bigeye_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .big_road1 .tie_down,.history .big_road .bead_road .bigeye_road1 .tie_down, .history .small_road .big_road .bead_road .tie_down, .history .small_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .small_road .tie_down, .history .big_road .bead_road .small_road1 .tie_down, .history .big_road1 .player,.history .bigeye_road1 .player, .history .small_road .player,.history .small_road1 .player {
   width: 7px;
   height: 7px; }
@@ -396,7 +398,7 @@ li {
   width: 7px;
   height: 7px; }
 .history .cockroch_road,.history .cockroch_road1 {
-  height:47px; }
+  height:61px; }
 .history .cockroch_road td, .history .cockroch_road1 td {
   width: 18px;
   height: 18px; }

@@ -5399,7 +5399,7 @@ z-index: 999;
      overflow-y: scroll;
 }
 
-.top-height{position: absolute;width: 100%;top: 0;height:72%;left: 0;}
+.top-height{position: absolute;width: 100%;top: 0;height:68%;left: 0;}
 .bottom-height{position: absolute;width:100%;bottom: 0px;/* height:28%; */}
 /* chat css end */
 

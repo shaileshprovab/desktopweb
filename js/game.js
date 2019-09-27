@@ -221,8 +221,8 @@ $('#jsBigAllRoad').hide();
       $('#beed_'+data.MapX+'_'+data.MapY).append(html);
 
       var beadXLength = $(".x_1 > td .beadlength").length;
-      if(beadXLength > 4){
-        var extraLength = beadXLength - 4;
+      if(beadXLength > 10){
+        var extraLength = beadXLength - 10;
         var leftWidth = (extraLength+1) * 31;
 
         $("#beadRoad").css({ 'marginLeft':'-'+leftWidth+'px' });
@@ -348,8 +348,8 @@ $('#jsBigAllRoad').hide();
         $('#bigroad_'+data.MapX+'_'+data.MapY).append(html);
       }
       var bigeyeroadLength = $(".bigx_1 > td .bigeye").length;
-      if(bigeyeroadLength > 29){
-        var extraBigEyeLength = bigeyeroadLength - 29;
+      if(bigeyeroadLength > 24){
+        var extraBigEyeLength = bigeyeroadLength - 24;
         var leftBigEyeWidth = (extraBigEyeLength+1) * 15;
 
         $("#bigeyeroad").css({ 'marginLeft':'-'+leftBigEyeWidth+'px' });
@@ -358,10 +358,20 @@ $('#jsBigAllRoad').hide();
       this.updateBoardPosition('big');
     },
     updateBigEyeTable: function(data) {
-      var html = '<div data-column="' + data.MapY + '" id="bigEyeRoadAllRoadGrid_0_0" name="bigEyeRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
+      console.log(data);
+      var color = '';
+      if(data.color == 'player'){
+        color = '#216BB0';
+      }
+      else{
+        color = '#b80909';
+      }
+      /*var html = '<div data-column="' + data.MapY + '" id="bigEyeRoadAllRoadGrid_0_0" name="bigEyeRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
             <p></p>\
           </div>';
-      $('#bigEyeRoadAllRoadGrid').append(html);
+      $('#bigEyeRoadAllRoadGrid').append(html);*/
+      var html = '<div style="background: '+color+';border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
+      $('#bigeyeboy_'+data.MapX+'_'+data.MapY).append(html);
       this.updateBoardPosition('eye'); 
     },
     updateSmallRoadTable: function(data) {
