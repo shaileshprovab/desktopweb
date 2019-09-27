@@ -400,8 +400,8 @@ li {
 .history .cockroch_road,.history .cockroch_road1 {
   height:61px; }
 .history .cockroch_road td, .history .cockroch_road1 td {
-  width: 18px;
-  height: 18px; }
+  width: 10px;
+  height: 10px; }
 .history .cockroch_road .banker, .history .cockroch_road1 .banker, .history .cockroch_road .bead_road .tie, .history .cockroch_road1 .bead_road .tie, .history .bead_road .cockroch_road .tie, .history .bead_road .cockroch_road1 .tie, .history .cockroch_road .bead_road .big_road .tie_top, .history .cockroch_road1 .bead_road .big_road .tie_top, .history .bead_road .big_road .cockroch_road .tie_top, .history .bead_road .big_road .cockroch_road1 .tie_top, .history .cockroch_road .big_road .bead_road .tie_top, .history .cockroch_road1 .big_road .bead_road .tie_top, .history .big_road .bead_road .cockroch_road .tie_top, .history .big_road .bead_road .cockroch_road1 .tie_top, .history .cockroch_road .bead_road .big_road .tie_down, .history .cockroch_road1 .bead_road .big_road .tie_down, .history .bead_road .big_road .cockroch_road .tie_down, .history .bead_road .big_road .cockroch_road1 .tie_down, .history .cockroch_road .big_road .bead_road .tie_down, .history .cockroch_road1 .big_road .bead_road .tie_down, .history .big_road .bead_road .cockroch_road .tie_down, .history .big_road .bead_road .cockroch_road1 .tie_down, .history .cockroch_road .player,.history .cockroch_road1 .player {
   top: calc(100% - 6px); }
 

@@ -358,7 +358,6 @@ $('#jsBigAllRoad').hide();
       this.updateBoardPosition('big');
     },
     updateBigEyeTable: function(data) {
-      console.log(data);
       var color = '';
       if(data.color == 'player'){
         color = '#216BB0';
@@ -375,17 +374,35 @@ $('#jsBigAllRoad').hide();
       this.updateBoardPosition('eye'); 
     },
     updateSmallRoadTable: function(data) {
-      var html = '<div data-column="' + data.MapY + '" id="smallRoadAllRoadGrid_0_0" name="smallRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
-            <p></p>\
-          </div>';
-      $('#smallRoadAllRoadGrid').append(html);
+      var color = '';
+      if(data.color == 'player'){
+        color = '#216BB0';
+      }
+      else{
+        color = '#b80909';
+      }
+      // var html = '<div data-column="' + data.MapY + '" id="smallRoadAllRoadGrid_0_0" name="smallRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
+      //       <p></p>\
+      //     </div>';
+      // $('#smallRoadAllRoadGrid').append(html);
+      var html = '<div style="border:2px '+color+'  solid;border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
+      $('#smallRoad_'+data.MapX+'_'+data.MapY).append(html);
       this.updateBoardPosition('small'); 
     },
     updateCockroachRoadTable: function(data) {
-      var html = '<div data-column="' + data.MapY + '" id="cockrochRoadAllRoadGrid_0_0" name="cockrochRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
-            <p></p>\
-          </div>';
-      $('#cockrochRoadAllRoadGrid').append(html);
+      var color = '';
+      if(data.color == 'player'){
+        color = '#216BB0';
+      }
+      else{
+        color = '#b80909';
+      }
+      // var html = '<div data-column="' + data.MapY + '" id="cockrochRoadAllRoadGrid_0_0" name="cockrochRoadAllRoadGrid_0" style="grid-area: '+ data.MapX +'/' + data.MapY + '" class="road-dot dot-' + data.color + '">\
+      //       <p></p>\
+      //     </div>';
+      // $('#cockrochRoadAllRoadGrid').append(html);
+      var html = '<div style="background: '+color+';transform:rotate(-45deg);width:7px;height:2px;float:left;margin-bottom:4px">&nbsp;</div>';
+      $('#cockrochRoad_'+data.MapX+'_'+data.MapY).append(html);
       this.updateBoardPosition('cockroach');
     },
     updateBoardPosition: function(board_type) {
