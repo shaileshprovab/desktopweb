@@ -369,8 +369,15 @@ $('#jsBigAllRoad').hide();
             <p></p>\
           </div>';
       $('#bigEyeRoadAllRoadGrid').append(html);*/
-      var html = '<div style="background: '+color+';border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
+      var html = '<div class="bigeyeclass" style="background: '+color+';border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
       $('#bigeyeboy_'+data.MapX+'_'+data.MapY).append(html);
+      var bigeyeboyroadLength = $(".bigEyeBoyRoad_1 > td .bigeyeclass").length;
+      if(bigeyeboyroadLength > 36){
+        var extraBigEyeBoyLength = bigeyeboyroadLength - 36;
+        var leftBigEyeBoyWidth = (extraBigEyeBoyLength+1) * 15;
+
+        $("#bigEyeBoyRoad").css({ 'marginLeft':'-'+leftBigEyeBoyWidth+'px' });
+      }
       this.updateBoardPosition('eye'); 
     },
     updateSmallRoadTable: function(data) {
@@ -385,8 +392,16 @@ $('#jsBigAllRoad').hide();
       //       <p></p>\
       //     </div>';
       // $('#smallRoadAllRoadGrid').append(html);
-      var html = '<div style="border:2px '+color+'  solid;border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
+      var html = '<div class="smallclass" style="border:2px '+color+'  solid;border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
       $('#smallRoad_'+data.MapX+'_'+data.MapY).append(html);
+
+      var smallroadLength = $(".smallroad_1 > td .smallclass").length;
+      if(smallroadLength > 18){
+        var extraSmallRoadLength = smallroadLength - 18;
+        var leftSmallRoadWidth = (extraSmallRoadLength+1) * 15;
+
+        $("#smallRoad").css({ 'marginLeft':'-'+leftSmallRoadWidth+'px' });
+      }
       this.updateBoardPosition('small'); 
     },
     updateCockroachRoadTable: function(data) {
@@ -401,8 +416,18 @@ $('#jsBigAllRoad').hide();
       //       <p></p>\
       //     </div>';
       // $('#cockrochRoadAllRoadGrid').append(html);
-      var html = '<div style="background: '+color+';transform:rotate(-45deg);width:7px;height:2px;float:left;margin-bottom:4px">&nbsp;</div>';
+      var html = '<div class="cockroachclass" style="background: '+color+';transform:rotate(-45deg);width:7px;height:2px;float:left;margin-bottom:4px">&nbsp;</div>';
       $('#cockrochRoad_'+data.MapX+'_'+data.MapY).append(html);
+
+      var cockroachroadLength = $(".cockroachroad_1 > td .cockroachclass").length;
+      console.log("cockroachroadLength - ",cockroachroadLength);
+      if(cockroachroadLength > 18){
+        var extraCockroachRoadLength = cockroachroadLength - 18;
+        var leftCockroachRoadWidth = (extraCockroachRoadLength+1) * 15;
+
+        $("#cockrochRoad").css({ 'marginLeft':'-'+leftCockroachRoadWidth+'px' });
+      }
+
       this.updateBoardPosition('cockroach');
     },
     updateBoardPosition: function(board_type) {
