@@ -372,10 +372,11 @@ $('#jsBigAllRoad').hide();
       var html = '<div class="bigeyeclass" style="background: '+color+';border-radius: 100%;width:7px;height:7px;float:left;margin-bottom:0.6px;">&nbsp;</div>';
       $('#bigeyeboy_'+data.MapX+'_'+data.MapY).append(html);
       var bigeyeboyroadLength = $(".bigEyeBoyRoad_1 > td .bigeyeclass").length;
+      console.log("Big Eye Board Length - ",bigeyeboyroadLength);
       if(bigeyeboyroadLength > 36){
         var extraBigEyeBoyLength = bigeyeboyroadLength - 36;
-        var leftBigEyeBoyWidth = (extraBigEyeBoyLength+1) * 15;
-
+        var leftBigEyeBoyWidth = (extraBigEyeBoyLength+1) * 10;
+        console.log("Left -- ",leftBigEyeBoyWidth);
         $("#bigEyeBoyRoad").css({ 'marginLeft':'-'+leftBigEyeBoyWidth+'px' });
       }
       this.updateBoardPosition('eye'); 
@@ -398,7 +399,7 @@ $('#jsBigAllRoad').hide();
       var smallroadLength = $(".smallroad_1 > td .smallclass").length;
       if(smallroadLength > 18){
         var extraSmallRoadLength = smallroadLength - 18;
-        var leftSmallRoadWidth = (extraSmallRoadLength+1) * 15;
+        var leftSmallRoadWidth = (extraSmallRoadLength+1) * 10;
 
         $("#smallRoad").css({ 'marginLeft':'-'+leftSmallRoadWidth+'px' });
       }
@@ -423,7 +424,7 @@ $('#jsBigAllRoad').hide();
       console.log("cockroachroadLength - ",cockroachroadLength);
       if(cockroachroadLength > 18){
         var extraCockroachRoadLength = cockroachroadLength - 18;
-        var leftCockroachRoadWidth = (extraCockroachRoadLength+1) * 15;
+        var leftCockroachRoadWidth = (extraCockroachRoadLength+1) * 10;
 
         $("#cockrochRoad").css({ 'marginLeft':'-'+leftCockroachRoadWidth+'px' });
       }
